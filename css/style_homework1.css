@@ -1,0 +1,75 @@
+body{
+    width: 510px;
+    margin: 0 auto;
+    border:2px solid lightgrey;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+
+h1{
+    padding-top:20px;
+    text-align: center;
+}
+
+.worker {
+    margin-left:40px;
+    margin-right: 40px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    line-height: 2px;
+}
+
+.my_wishes,
+.contacts,
+.feedback{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.learning,
+.contacts,
+.feedback{
+    padding-left: 25px;
+}
+
+.my_interests{
+    line-height: 27px;
+    padding-left: 45px;
+}
+
+
+.main_photo{
+    text-align: center;
+}
+
+.learning, .my_interests{
+    padding-top: 10px;
+}
+
+.telephone {
+    padding-top: 15px;
+    line-height: 5px;
+}
+
+
+.profile{
+    padding-top:20px;
+    line-height: 5px;
+    padding-bottom: 5px;
+
+}
+
+
+
+ a{
+    color: blue;
+
+}
+
+.feedback {
+    padding-top: 10px;
+    line-height: 10px;
+    padding-bottom: 40px;
+
+
+
+}
