@@ -1,75 +1,79 @@
 body{
-    width: 510px;
+    box-sizing: border-box;
+    background-color: lightgrey;
     margin: 0 auto;
-    border:2px solid lightgrey;
-    font-family: Tahoma;
-    font-size: 15px;
+
+}
+
+.about_me{
+    width: 420px;
+    margin: 0 auto;
+    padding: 15px 45px 30px;
+    border:2px solid grey;
+    border-shadow: 0 2 4px grey;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 h1{
-    padding-top:20px;
     text-align: center;
-}
-
-.worker {
-    margin-left:40px;
-    margin-right: 40px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    line-height: 2px;
-}
-
-.my_wishes,
-.contacts,
-.feedback{
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.learning,
-.contacts,
-.feedback{
-    padding-left: 25px;
-}
-
-.my_interests{
-    line-height: 27px;
-    padding-left: 45px;
 }
 
 
 .main_photo{
     text-align: center;
+    display:block;
 }
 
-.learning, .my_interests{
-    padding-top: 10px;
-}
-
-.telephone {
-    padding-top: 15px;
-    line-height: 5px;
-}
-
-
-.profile{
-    padding-top:20px;
-    line-height: 5px;
-    padding-bottom: 5px;
-
-}
-
-
-
- a{
+a{
     color: blue;
-
 }
 
+p, a, li {
+    font-size: 14px;
+}
+
+.worker,
+.my_wishes .learning,
+.contacts,
+.profile,
 .feedback {
-    padding-top: 10px;
-    line-height: 10px;
-    padding-bottom: 40px;
-
-
-
+    padding-left: 20px;
 }
+
+.my_wishes .my_interests{
+    padding-left: 40px;
+    line-height: 1.9;
+}
+
+.my_wishes,
+.contacts,
+.feedback{
+    padding-top: 5px;
+}
+
+.my_interests {
+    padding-top: 10px;
+}
+
+
+.contacts p {
+    margin-bottom: -5px;
+}
+
+
+.profile {
+    padding-top: 40px;
+}
+
+.profile p {
+    margin-top: -5px;
+}
+
+
+hr {
+    padding-top:0;
+    padding-bottom:0;
+}
+
