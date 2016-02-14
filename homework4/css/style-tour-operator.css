@@ -1,0 +1,76 @@
+body {
+    width: 1280px;
+    height: 1024px;
+    background-image: url(../img/background-body.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
+/* HEADER */
+header {
+    padding-left: 150px;
+    padding-right: 130px;
+
+}
+
+.contacts {
+    padding-top: 10px;
+    padding-left: 840px;
+    text-align:left;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.countries {
+    margin-top: 52px;
+   margin-right: 30px;
+}
+
+.countries li {
+    float: right;
+    margin-left: 10px;
+}
+
+.countries li a {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 17px;
+    font-family: Tahoma;
+    font-size: 10px;
+}
+
+.countries .india a {
+    background-image: url(../img/india.png);
+}
+
+
+
+.countries .nepal a {
+    background-image: url(../img/nepal.png);
+}
+
+.countries .tibet a {
+    background-image: url(../img/tibet.png);
+}
+
+.countries .butane a {
+    background-image: url(../img/butane.png);
+}
+
+.countries .sri-lanka a {
+    background-image: url(../img/sri-lanka.png);
+}
+
+.countries .maldives a {
+    background-image: url(../img/maldives.png);
+}
+
+nav {
+    background: linear-gradient(to top, #373737, #000000);
+}
+
