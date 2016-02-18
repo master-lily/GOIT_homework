@@ -54,12 +54,13 @@ body {
 .goods {
     margin-right: 50px;
     float: left;
+    border: 1px solid #c8c8c8;
 }
 
 .goods li{
     width: 215px;
     padding-left:25px;
-    border: 1px dotted #656363;
+    border: 1px solid #c8c8c8;
 }
 
 .goods li a {
@@ -80,7 +81,7 @@ body {
 /* MAIN */
 
 .photo img{
-    border: 1px dotted #656363;
+    border: 2px solid #c8c8c8;
 }
 
 .li_description {
