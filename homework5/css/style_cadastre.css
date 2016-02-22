@@ -2,7 +2,6 @@
     font-family: 'Helvetica Neue';
     src: local('Helvetica Neue');
     src: url('../fonts/helveticaneuecyr-thin.eot');
-    src: url('../fonts/helveticaneuecyr-thin.svg');
     src: url('../fonts/helveticaneuecyr-thin.ttf');
     src: url('../fonts/helveticaneuecyr-thin.woff');
     src: url('../fonts/helveticaneuecyr-thin.woff2');
@@ -24,6 +23,11 @@ body {
     background: url(../img/background2.jpg)  no-repeat;
     font-family: "Helvetica Neue";
 
+
+
+}
+
+.content{
 
 }
 
@@ -103,8 +107,8 @@ body {
 .tittle-cadastre {
     width: 556px;
     background:  rgba(32, 38, 35, 0.7);;
-   margin-top:200px;
-   margin-left: 350px;
+   margin-top:227px;
+   margin-left: 327px;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -125,7 +129,7 @@ h1{
     text-align: center;
     background:  rgba(32, 38, 35, 0.7);
     margin-top: 5px;
-   margin-left: 350px;
+   margin-left: 327px;
 
 }
 
@@ -145,8 +149,8 @@ h1{
 }
 
 .ou hr {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
     width:40%;
     color: #686d67;
 
