@@ -49,14 +49,11 @@ body {
     float: right;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 5px;
-    font-size: 20px;
+    padding-top: 10px;
+    font-size: 16px;
     font-weight: bold;
     display: block;
-    line-height: 18px;
-}
-.menu li a {
-
+    line-height: 13px;
 }
 
 .menu .meu a,
@@ -69,8 +66,7 @@ body {
 .menu .vendor a,
 .menu .oferta a,
 .menu .entrance a,
-.menu .entrance span
-{
+.menu .entrance span {
     color: #fefefe;
 }
 
@@ -98,6 +94,12 @@ body {
 .menu .oferta a {
     text-decoration: none;
 }
+
+.menu .oferta img {
+   margin-top: -5px;
+    margin-right: -15px;
+}
+
 .entrance a {
     text-decoration-color: #9ac2e4;
 }
@@ -111,9 +113,6 @@ body {
    margin-left: 327px;
     padding-top: 20px;
     padding-bottom: 20px;
-
-
-
 }
 
 h1{
@@ -139,7 +138,7 @@ h1{
 
 
 .ou {
-    width: 300px;
+    width: 295px;
     margin-left: 130px;
     margin-top: 16px;
     margin-bottom: 25px;
@@ -168,13 +167,18 @@ h1{
     margin-bottom: 5px;
      padding-top: 8px;
      padding-bottom: 8px;
-     padding-right: 135px;
+     padding-right: 115px;
     background-color: #0f0e0e;
     border: 1px solid #0f0e0e;
     color: white;
      font-size: 14px;
      line-height: 14px;
 }
+
+ .filling_fields input {
+     padding-left: 15px;
+     padding-left: 15px;
+ }
 
 .registration form input[type="checkbox"]{
     margin-left: -50px;
