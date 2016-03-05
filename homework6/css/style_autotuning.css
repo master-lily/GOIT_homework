@@ -1,0 +1,1059 @@
+@font-face {
+    font-family: 'lucida_sans';
+    src: url('../fonts/lucida-sans-unicode-webfont.eot');
+    src:url('../fonts/lucida-sans-unicode-webfont.woff2');
+    src:url('../fonts/lucida-sans-unicode-webfont.woff');
+    src: url('../fonts/lucida-sans-unicode-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #c0c0c0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1307px;
+    background: #ffffff;
+}
+
+.box,
+.header_photo {
+    width: 910px;
+    margin: 0 auto;
+}
+
+
+.first-nav:after,
+.menu li:after,
+.box:after,
+.footer_site_map li:after,
+.search:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.first-nav {
+    width: 910px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+
+.telephone {
+    width: 300px;
+    height: 38px;
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+    display: block;
+    position: relative;
+
+
+}
+
+.telephone .center-text-tel {
+    padding-top: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.021em;
+    position: absolute;
+}
+
+
+
+.icon_autorisation {
+    position: absolute;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+
+
+.registration {
+    width: 497px;
+    height: 25px;
+    float: left;
+    display: block;
+    margin-left: 8px;
+    margin-top: 17px;
+    background: linear-gradient(to top, #0d3458, #1f6685);
+    box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+    border-radius: 5px;
+    font-family: Lucida;
+
+}
+
+
+
+form {
+    margin-top: 3px;
+    position: relative;
+}
+
+.registration form input {
+
+    border: 1px solid #82949c;
+    font-size: 11px;
+    color: #bfbfbf;
+
+}
+
+
+
+.registration form input[type="text"]{
+    margin-left: 22px;
+    width: 113px;
+}
+
+
+.registration form input[type="password"] {
+    width: 111px;
+}
+
+input[placeholder] {
+    letter-spacing: 0.1em;
+}
+
+
+.registration form input[type="submit"],
+.registration form input[type="button"] {
+    background: none;
+    border: none;
+}
+
+.registration form input[type="submit"] {
+    border-right: 1px solid #bfbfbf;
+    margin-left: -6px;
+    margin-right: 2px;
+
+}
+
+.registration form input[type="button"]{
+    margin-left: -12px;
+}
+
+form span a {
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: #bfbfbf;
+
+
+
+}
+
+
+
+.map-icons {
+    float: right;
+    display: block;
+    margin-top: 19px;
+    margin-right: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border: 1px solid #d1d6d8;
+    border-radius: 10px;
+}
+
+.header_photo img {
+    margin: 0 auto;
+
+
+}
+
+
+/*NAV*/
+
+.menu {
+    width: 910px;
+    height: 34px;
+    margin: 0 auto;
+
+    background: linear-gradient(to top, #0a1235, #505860);
+    border-radius: 5px;
+}
+
+
+.menu li {
+    display: block;
+    float: left;
+}
+
+.menu .menu_company {
+    background: linear-gradient(to top, #0e375c, #1f6787);
+    margin-top: 4px;
+    border-radius: 20px;
+    margin-left: 130px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+}
+
+.menu .menu_company a {
+    font-family: Lucida;
+    font-size: 13px;
+    line-height: 25px;
+    color: #b0c0cc;
+    text-decoration: none;
+}
+
+.menu .menu_payment,
+.menu .menu_delivery,
+.menu .menu_articles,
+.menu .menu_contacts {
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.menu .menu_payment {
+    padding-left: 19px;
+}
+
+.menu .menu_delivery {
+    padding-left: 15px;
+}
+
+.menu .menu_articles {
+    padding-left: 12px;
+}
+
+.menu .menu_contacts {
+    padding-left: 11px;
+}
+
+
+.menu .menu_payment a,
+.menu .menu_delivery a,
+.menu .menu_articles a,
+.menu .menu_contacts a {
+    font-family: Lucida;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    line-height: 25px;
+    color: #5d6366;
+    text-decoration: none;
+}
+
+
+
+
+
+.bag {
+    margin-top: 3px;
+}
+
+.bag a {
+    display: block;
+    width: 90px;
+    height: 32px;
+    margin-left: 46px;
+    padding-top: 7px;
+    padding-left: 35px;
+    background: url(../img/icon-bag.png) no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5d6366;
+    text-decoration: none;
+}
+
+
+
+.total_payment  {
+    margin-top: 5px;
+    margin-left: -21px;
+}
+
+.total_payment a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #5d6366;
+    text-decoration: none;
+}
+
+.total_payment span {
+    color: #0d5a8f;
+    margin-left: 8px;
+}
+
+
+/* SEARCH FORMS*/
+
+.search,
+.search_by_auto,
+.discs,
+.search_bus_model-season,
+.left_side,
+.divider,
+.right_side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.search {
+    width: 900px;
+    margin-top: 4px;
+    margin-left: 47px;
+}
+
+.search_by_auto {
+    width: 393px;
+    height: 133px;
+    margin-right: 10px;
+    padding: 0 10px 0;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 0 rgba(150,150,150,0.75);
+}
+
+.search_by_auto .h3 {
+    margin: -2px 0 -13px 0;
+    padding-right: 2px;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #154467;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+
+
+.search1 {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.search1 a {
+    font: 14px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.025em;
+    color: #345d7b;
+}
+
+.search_auto_bus .p_bus {
+    text-align: right;
+}
+
+.search_auto_bus .p_bus,
+.search_auto_disc .p_disc {
+    margin-top: -2px;
+    padding-left: 13px;
+    font: bold 10px Arial, Helvetica, sans-serif;
+    color: #154467;
+    letter-spacing: 0.05em;
+}
+
+
+.search_by_auto label {
+    font: 10px Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    letter-spacing: 0.025em;
+}
+
+.search_by_auto span {
+    font: 9px Arial, Helvetica, sans-serif;
+    color: #9ba6aa;
+}
+
+.search_auto_disc {
+    display: block;
+    float: left;
+}
+
+.search_auto_bus {
+    display: block;
+    float: right;
+    padding-right: 10px;
+}
+
+.discs {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 234px;
+    height: 133px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 0 rgba(150,150,150,0.75);
+}
+
+.discs label {
+    font: 10px Arial, Helvetica, sans-serif;
+}
+
+.discs span {
+    font: 9px/8px Arial, Helvetica, sans-serif;
+    color: #9ba6aa;
+}
+
+.left_side {
+    display: block;
+    float: left;
+}
+
+.right_side {
+    display: block;
+    float: right;
+}
+
+.search_bus_model-season {
+    margin-right: 6px;
+    width: 168px;
+    height: 133px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 0 rgba(150,150,150,0.75);
+}
+
+.search_bus_model-season label {
+    font: bold 10px Arial, Helvetica, sans-serif;
+}
+
+.search_bus_model-season input[type="checkbox"] {
+    font: 12px Lucida;
+}
+
+.search_auto_disc .big_input select,
+.search_auto_bus .big_input select{
+    width: 100px;
+}
+
+.search_auto_disc .input_55 select,
+.search_auto_bus .input_55 select,
+.left_side .input_55 select,
+.left_side .input_55a select,
+.right_side .input_55 select {
+    width: 55px;
+}
+
+.left_side .input_50 select,
+.search_bus_model-season .input_50 select {
+    width: 50px;
+}
+
+.search_bus_model-season .input_45 select {
+    width: 45px;
+}
+
+.search_auto_disc .big_input,
+.search_auto_bus .big_input,
+.search_auto_disc .input_55,
+.search_auto_bus .input_55,
+.left_side .input_55,
+.left_side .input_55a,
+.right_side .input_55,
+.left_side .input_50,
+.search_bus_model-season .input_50,
+.search_bus_model-season .input_45 {
+    display: inline-block;
+    clear: both;
+    text-align: right;
+}
+
+.search_auto_disc .big_input #auto_name  {
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+
+.search_auto_disc .big_input #auto_model  {
+    position: relative;
+    height: 18px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.search_auto_disc .input_55 #auto_year  {
+    position: relative;
+    height: 18px;
+    margin-top: 3px;
+    margin-left: 31px;
+}
+
+.search_auto_disc .big_input label,
+.search_auto_bus .big_input label,
+.search_auto_disc .input_55 label,
+.search_auto_bus .input_55 label,
+.left_side .input_55 label,
+.left_side .input_55a label,
+.right_side .input_55 label,
+.left_side .input_50 label,
+.search_bus_model-season .input_50 label,
+.search_bus_model-season .input_45 label {
+    float: left;
+    text-align: left;
+}
+
+.search_auto_disc .big_input label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.search_auto_disc .big_input .auto_model {
+    display: inline-block;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 2px;
+    font: 10px Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.search_auto_disc .input_55 .auto_year {
+    display: inline-block;
+    position: absolute;
+    margin-top: -6px;
+    font: 10px Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.search_auto_bus #auto_year1 {
+    margin-right: 45px;
+}
+
+.search_bus_model-season #bus_model {
+    margin-right: 75px;
+}
+
+.search_bus_model-season .input_45  {
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.left_side {
+    width: 150px;
+}
+
+.left_side #r,
+.left_side #quantity_hole,
+.left_side #r_hole {
+    margin-right: 40px;
+}
+
+.divider {
+    height: 100px;
+    margin: 0 5px;
+    border-left: 1px solid grey;
+}
+
+
+
+
+
+/* ASIDE*/
+
+.left-column {
+    width:  182px;
+    float: left;
+    display: block;
+    margin-top: 5px;
+}
+.catalog,
+.brend,
+.list1,
+.list2 {
+    height: 25px;
+    border: 1px solid #949fa4;
+    border-radius: 20px;
+    color: #114165;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.catalog,
+.brend {
+    box-shadow: 3px 3px 3px 0 rgba(150, 150, 150, 0.75);
+}
+
+.list1 {
+    background: url(../img/circle.png) no-repeat;
+    width: 150px;
+    margin-top: 15px;
+}
+.list1a {
+    margin-top:2px;
+}
+.list1b {
+    margin-top:-1px;
+}
+
+.list2 {
+    background: url(../img/circle.png) no-repeat;
+    width: 135px;
+    margin-top: 13px;
+    margin-left: 12px;
+
+}
+
+.list1 a,
+.list2 a  {
+
+    margin-left: 30px;
+    font-family: Lucida;
+    font-size: 14px;
+    color: #114165;
+    text-decoration: none;
+}
+
+.list1 .list1_span,
+.list2 .list2_span {
+    position: absolute;
+    margin-top: 5px;
+
+}
+
+.text-center {
+    margin-left: 7px;
+    position: absolute;
+    font-family: Lucida;
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+ .t-catalog {
+     letter-spacing: 0.04em;
+    line-height: 30px;
+}
+ .t_brend {
+     letter-spacing: 0.1em;
+     line-height: 25px;
+}
+
+
+.list11 {
+    list-style-type: circle;
+    margin-left: 48px;
+}
+
+
+.list11 a {
+   text-decoration: none;
+    font-family: Lucida;
+    font-size: 15px;
+    line-height: 25px;
+    color: #909ba0;
+}
+
+.list111 a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0c3256;
+}
+
+.right-column {
+    width:  182px;
+    float: right;
+    display: block;
+    margin-top: 5px;
+}
+
+.list22 {
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+.list22a {
+    margin-top: 2px;
+
+}
+.list22 a {
+
+    font-family: Lucida;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+    color: #909ba0;
+    text-decoration: none;
+}
+
+.right_column_choosing [type="button"] {
+    margin-top: 16px;
+    margin-left: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(to top, #0e375c, #1f6787);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    color: #e5e9ea;
+}
+
+/* MAIN*/
+
+main {
+    width: 526px;
+    height: 630px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(201, 207, 209, 0.49), rgba(35, 75, 93, 0.49));
+}
+
+.bus {
+    width: 526px;
+    height: 630px;
+    margin-top: 10px;
+}
+
+.goodyear_bus {
+    display: block;
+    float: left;
+}
+
+.hankook_bus {
+    display: block;
+    float: right;
+}
+
+.nokian_bus {
+    display: block;
+    float: left;
+}
+
+.goodyear {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+figcaption a {
+    display: block;
+    font-family: Lucida;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.115em;
+    font-weight: bold;
+    color: #206988;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.model {
+    font-size: 12px;
+    color: #1f2528;
+    letter-spacing: 0.15em;
+}
+
+.price {
+    padding-left: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    font-style: italic;
+    color: #114165;
+}
+
+.price_goodyear1  {
+display: block;
+    margin-top: -3px;
+}
+
+.price_goodyear2  {
+    display: block;
+    margin-top: -3px;
+}
+
+.price_goodyear3  {
+    display: block;
+    margin-top: -2px;
+}
+
+.price_hankook1  {
+    display: block;
+    margin-top: -3px;
+}
+
+.price_hankook2  {
+    display: block;
+
+}
+
+.price_hankook3  {
+    display: block;
+    margin-top: -2px;
+}
+
+.goodyear img {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #a4aeb1;
+    border-radius: 10px;
+}
+
+.goodyear1 img{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 1px;
+}
+
+.goodyear2 img{
+    margin-top: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.goodyear3 img{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -4px;
+}
+
+
+.nokian {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+
+
+.nokian img {
+    padding-left: 25px;
+    padding-right: 33px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #a4aeb1;
+    border-radius: 10px;
+}
+
+.nokian1 img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 2px;
+
+}
+
+.nokian2 img {
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.nokian3 img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 2px;
+
+}
+
+.hankook {
+    margin-right: 16px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.hankook img {
+    padding-left: 25px;
+    padding-right: 26px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #a4aeb1;
+    border-radius: 10px;
+}
+
+.hankook1 img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1px;
+
+}
+
+.hankook2 img {
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+.hankook3 img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -4px;
+}
+
+.model_goodyear {
+    letter-spacing: 0.065em;
+}
+
+.model_hankook {
+    letter-spacing: 0.15em;
+}
+
+.model_nokian {
+    letter-spacing: 0.05em;
+}
+
+.model_goodyear3 {
+    line-height: 22px;
+}
+
+
+
+.a_nokian3 {
+  display: inline-block;
+    margin-top: 7px;
+}
+
+.model_nokian3 {
+    position: relative;
+    margin-top: 7px;
+}
+
+.a_hankook2 {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.a_hankook3 {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.a_goodyear2 {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.a_goodyear3 {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.a_nokian2 {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.model_hankook3 {
+    line-height: 22px;
+}
+
+
+/* logo_companies*/
+
+.logos {
+    width: 910px;
+   margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.logos li {
+    display: inline-block;
+}
+
+.toyotires img {
+    display: block;
+    margin-left: 162px;
+}
+
+.bidgestone img {
+    display: block;
+    margin-left: 5px;
+}
+
+
+.continental-tire img {
+    display: block;
+    margin-left: 5px;
+}
+
+.circle-model img {
+    display: block;
+    margin-left: 8px;
+}
+
+.avone img {
+    display: block;
+    margin-left: 5px;
+}
+
+.tire-factory img {
+    display: block;
+    margin-left: -3px;
+    margin-top: 5px;
+}
+
+.firelli img {
+    display: block;
+    margin-left: 0px;
+}
+
+.dunlop img {
+    display: block;
+    margin-left: 6px;
+    margin-top: -26px;
+}
+
+
+
+/* FOOTER*/
+
+
+footer {
+   width: 910px;
+    height: 100px;
+    margin: auto;
+    background: #213a4d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_site_map {
+    margin-top: 20px;
+    margin-left: 297px;
+    clear: both;
+}
+
+.footer_site_map li {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 9px;
+    padding-right: 8px;
+}
+
+.footer_site_map a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #bec6c9;
+    text-decoration: none;
+
+}
+
+.about_company
+.delivery
+.articles {
+    border-right: 1px solid #6a7b87;
+}
+
+.about_company a {
+    color: #52abcb;
+}
+
+.delivery,
+.articles,
+.contacts {
+    letter-spacing: 0.025em;
+}
+
+
+.copyrights {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #7f4740;
+    padding-bottom: 40px;
+}
+
+
+
