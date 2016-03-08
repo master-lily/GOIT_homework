@@ -1,0 +1,19 @@
+/* 960px*/
+
+@media  /*and (min-width:769px)*/  (max-width:420px) {
+    .header {
+        width: 100%;
+color: red;
+    }
+
+    .header_logo {
+        width: 80%;
+
+    }
+
+    .menu__item {
+        width: 20%;
+
+    }
+
+}
