@@ -22,7 +22,7 @@ src: url('../fonts/LeagueGothic-Regular.ttf')  format('truetype');
 
 body {
     width: 2400px;
-    background: url(../img/header.png), no-repeat; linear-gradient(to top, #322539, #745083);
+   background: url(../img/header.png), no-repeat; linear-gradient(to top, #322539, #745083);
 }
 
 .break-word {
@@ -52,6 +52,7 @@ body {
 .wrapper__header {
     width: 100%;
     height: 850px;
+
 
 }
 
@@ -89,7 +90,9 @@ background: linear-gradient(to top, #745083,  #322539);
 
 .h2 {
     font-family: LeagueGothic-Regular;
+    font-size: 30px;
     color: #454545;
+
 }
 
 .h2_about {
@@ -321,12 +324,18 @@ color: #a6a6a6;
 .updates {
     width: 45%;
     float: right;
-    position: relative;
     margin-top: 125px;
     margin-bottom: 40px;
     box-sizing: border-box;
 
 }
+
+
+.updates__news {
+    position: relative;
+    box-sizing: border-box;
+}
+
 
 
 /* 960px*/
