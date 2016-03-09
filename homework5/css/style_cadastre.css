@@ -138,19 +138,17 @@ h1{
 
 
 .ou {
-    width: 295px;
-    margin-left: 130px;
-    margin-top: 16px;
-    margin-bottom: 25px;
-    font-size: 16px;
+    width: 278px;
+    margin: 16px 142px 25px;
+    font-size: 14px;
     color: #686d67;
     text-align: center;
 }
 
 .ou hr {
-    margin-left: 9px;
-    margin-right: 9px;
-    width:40%;
+    margin-left: 1px;
+    margin-right: 1px;
+    width:45%;
     color: #686d67;
 
 }
@@ -167,7 +165,7 @@ h1{
     margin-bottom: 5px;
      padding-top: 8px;
      padding-bottom: 8px;
-     padding-right: 115px;
+     padding-right: 85px;
     background-color: #0f0e0e;
     border: 1px solid #0f0e0e;
     color: white;
@@ -176,12 +174,11 @@ h1{
 }
 
  .filling_fields input {
-     padding-left: 15px;
-     padding-left: 15px;
+     padding-left: 20px;
  }
 
 .registration form input[type="checkbox"]{
-    margin-left: -50px;
+    margin-left: -45px;
     margin-top: -5px;
 
 }
