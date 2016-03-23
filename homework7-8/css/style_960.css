@@ -17,3 +17,177 @@ color: red;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    /*HEADER*/
+    body {
+        width: 100%;
+    }
+    .wrapper {
+        width: 94.7916666666667%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 100%;
+
+    }
+
+    .header__logo {
+        width:100%;
+        margin-top: 67px;
+        margin-bottom: 30px;
+
+    }
+
+    .logo {
+        font-size: 3em; /* 48px/16px */
+        margin-left: 7.1614583%; /* 55px/768px */
+    }
+
+    .menu {
+        float: none;
+        position: relative;
+        margin-right: -1.953125%;
+
+    }
+
+    .menu__item {
+        margin-top: 20px;
+        margin-bottom: 170px;
+        margin-left: 5.9895833%; /* 46px/768px */
+        font-size: 1.5em; /* 24px/16px */
+
+    }
+
+    /*SLIDER*/
+    .wrapper__slider {
+        width: 36.45833%; /* 280px/768px */
+        height: 200px;
+        overflow: hidden;
+        float: left;
+        margin-top: 70px;
+        box-sizing: border-box;
+    }
+
+    .slider__tittle {
+        font-size: 2.5em; /* 40px/16px */
+        line-height: 1.5em;
+    }
+
+    .slider__undertittle {
+        font-size: 1.4em; /* 22.4px/16px */
+        line-height: 1.5em;
+        height: 30px;
+        overflow: hidden;
+    }
+
+    .text_slider {
+        height: 110px;
+        line-height: 1.5em; /* 24px/16px */
+        padding-top: 7px;
+        letter-spacing: 0.05em;
+    }
+
+    /*ABOUT*/
+    .about {
+        width: 100%;
+        height: 340px;
+        box-sizing: border-box;
+    }
+
+    .about__company {
+        height: 210px;
+        width: 20.18229%; /* 155px/768px */
+        margin-top: 71px;
+        margin-bottom: 65px;
+        margin-left: 7.8125%; /* 60px/768px */
+        box-sizing: border-box;
+
+    }
+
+    .h2_about {
+        font-size: 1.5em; /* 24px/16px */
+    }
+
+    .text_about {
+        height: 160px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+
+
+    .more_about {
+        padding-right: 14.19355%; /* 22px/155px */
+    }
+
+
+    /*BLOG*/
+
+    .blog {
+        width: 100%;
+        height: 482px;
+        box-sizing: border-box;
+    }
+
+    .start {
+        width: 40.36458%; /* 310px/768px */
+        height: 215px;
+        overflow: hidden;
+        box-sizing: border-box;
+
+    }
+
+
+
+
+    .h2_start {
+        display: block;
+        position: relative;
+        margin-left: 20%; /* 62px/310px */
+        font-size: 1.5em; /* 24px/16px */
+
+    }
+
+    .h2__starts {
+        display: block;
+        width: auto;
+
+    }
+
+    .text_start {
+        margin-left: 20%; /* 62px/310px */
+        overflow: hidden;
+    }
+
+    .updates {
+        width: 35%;
+        box-sizing: border-box;
+
+    }
+
+
+
+
+
+
+
+
+
+}
+/*@media screen  and (max-width:420px) {
+
+
