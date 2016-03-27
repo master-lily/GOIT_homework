@@ -6,20 +6,23 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_pingbuller2.css">
     <link rel="stylesheet" href="css/style_pingbuller.css">
+    <script type="application/javascript" src="js/respond.js"></script>
+    <script type="application/javascript" src="js/matchmedia.addListener.js"></script>
+    <script type="application/javascript" src="js/matchmedia.polyfill.js"></script>
           <!--media="screen and (max-width: 420px)",
           media="screen and (max-width: 960px)"-->
     <!--<link rel="stylesheet" href="css/style_960.css"
           media="screen and (max-width: 420px)">-->
 
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
+</style>
 
 
-    <style>
-        img {
-            max-width: 100%;
-            height: auto;
-            width: auto\9; /* ie8 */
-        }
-    </style>
 
 
 </head>
@@ -33,7 +36,7 @@
     </h1>
 </div>
     <nav>
-        <ul class="menu">
+        <ul class="menu menu_h">
             <li class="menu__item menu__item-1h"><a class=" menu__link" href="#"><span class="menu__link menu_home">HOME</span></a></li>
             <li class="menu__item menu__item-2h"><a class="menu__link" href="#">ABOUT</a></li>
             <li class="menu__item menu__item-3h"><a class="menu__link" href="#">BLOG</a></li>
@@ -57,14 +60,73 @@
 
         </p>
         </div>
+    <div class="wrapper__telephone">
+        <img
+                src="img/telephone.png" alt="telephone">
+        <!--srcset="img/telephone.png 960w,
+        img/telephone.png 768w,
+        img/telephone.png 480w"-->
+    </div>
+    <!--<div class="slider-circle"><img src="img/circles_under_tel.png" alt="circle"></div>-->
 </header>
 
 <main>
 
 
   <div class="wrapper__box">
-      <div class="about">
-          <div class="about__company">
+      <ul class="about">
+          <li class="about__company about__company_1">
+             <div class="about-icon"></div>
+              <h2 class="h2 h2_about">
+                  ABOUT OUR COMPANY
+              </h2>
+              <p  class="text text_about">
+                  Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                  Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                  Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat
+                  consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum
+                  arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac
+                  habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                  Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+              </p>
+              <a class="more more_about" href="#">READ MORE</a>
+          </li>
+          <li class="about__company about__company_2 ">
+              <div class="about-icon"></div>
+              <h2 class="h2 h2_about">
+                  ABOUT OUR COMPANY
+              </h2>
+              <p  class="text text_about">
+                  Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                  Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                  Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat
+                  consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum
+                  arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac
+                  habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                  Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+              </p>
+              <a class="more more_about" href="#">READ MORE</a>
+              </li>
+          <li class="about__company about__company_3">
+              <div class="about-icon"></div>
+              <h2 class="h2 h2_about">
+                  ABOUT OUR COMPANY
+              </h2>
+              <p  class="text text_about">
+                  Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                  Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                  Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat
+                  consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum
+                  arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac
+                  habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                  Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+              </p>
+              <a class="more more_about" href="#">READ MORE</a>
+              </li>
+      </ul>
+
+          <!-- <div class="about">
+          <div class="about__company about__company_1">
               <h2 class="h2 h2_about">
                   ABOUT OUR COMPANY
               </h2>
@@ -80,7 +142,7 @@
               <a class="more more_about" href="#">READ MORE</a>
           </div>
 
-          <div class="about__company ">
+          <div class="about__company about__company_2 ">
               <h2 class="h2 h2_about">
                   ABOUT OUR COMPANY
               </h2>
@@ -97,7 +159,7 @@
           </div>
 
 
-      <div class="about__company ">
+      <div class="about__company about__company_3">
           <h2 class="h2 h2_about">
               ABOUT OUR COMPANY
           </h2>
@@ -112,7 +174,8 @@
           </p>
           <a class="more more_about" href="#">READ MORE</a>
       </div>
-  </div>
+      </div>-->
+
   </div>
 
     <div class="wrapper__box">
@@ -133,6 +196,15 @@
 
             </p>
         </div>
+
+            <div class="blog-circle blog-circle_bupdates">
+                <div class="blog-circle-white"></div>
+                <div class="blog-circle-violet"></div>
+                <div class="blog-circle-white"></div>
+                <div class="blog-circle-white"></div>
+            </div>
+
+
 
         <div class="updates">
             <h2 class="h2 h2_updates">RECENT UPDATES</h2>
@@ -171,15 +243,36 @@
                 </p>
                     </div>
                 </div>
-            <a class="more more_updates" href="#">
+            <a class="more more_updates-1" href="#">
                 READ MORE HERE
             </a>
+
+            <a class="more more_updates-2" href="#">
+                MORE BLOG POSTS
+            </a>
+
         </div>
+
+
+        </div>
+        <div class="blog-circle">
+            <div class="blog-circle-white"></div>
+            <div class="blog-circle-violet"></div>
+            <div class="blog-circle-white"></div>
+            <div class="blog-circle-white"></div>
         </div>
     </div>
 
+
+
     <div class="wrapper__box">
-    <div class="logos"><img src="img/logos.png" alt="logos"></div>
+    <div class="logos"> <img
+            srcset="img/logos.png 960w,
+            img/logos_768.png 768w,
+    img/logos_480.png 480w,
+    img/logos_320_1.png 320w"
+                             src="img/logos.png" alt="logos">
+    </div> <!--, img/logos_320_2.png 320w, img/logos_320_3.png 320w-->
     </div>
 
     <div class="wrapper__box">
@@ -225,7 +318,7 @@
         </div>
         </div>
 
-        <div class="different__news-categories">
+        <div class="different__news-categories different__news-categories_1">
             <div class="wrapper-news">
             <h2 class="h2 h2_news-categories">
                 NEWS CATEGORIES
@@ -241,6 +334,42 @@
 
             </p>
         </div>
+            </div>
+
+            <div class="different__news-categories different__news-categories_2">
+                <div class="wrapper-news">
+                    <h2 class="h2 h2_news-categories">
+                        NEWS CATEGORIES
+                    </h2>
+                    <p class="text text_different">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat
+                        consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum
+                        arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac
+                        habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                        Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+
+                    </p>
+                </div>
+                </div>
+
+                <div class="different__news-categories different__news-categories_3">
+                    <div class="wrapper-news">
+                        <h2 class="h2 h2_news-categories">
+                            NEWS CATEGORIES
+                        </h2>
+                        <p class="text text_different">
+                            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                            Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                            Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat
+                            consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum
+                            arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac
+                            habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                            Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+
+                        </p>
+                    </div>
         </div>
     </div>
         </div>
@@ -248,7 +377,7 @@
 <footer class="wrapper__footer">
     <nav>
         <ul class="menu menu_footer">
-            <li class="menu__item"><a class=" menu__link menu__link_footer" href="#">HOME</a></li>
+            <li class="menu__item menu__item_footer"><a class=" menu__link menu__link_footer" href="#">HOME</a></li>
             <li class="menu__item menu__item_2"><a class="menu__link menu__link_footer" href="#">ABOUT</a></li>
             <li class="menu__item menu__item_2"><a class="menu__link menu__link_footer" href="#">BLOG</a></li>
             <li class="menu__item menu__item_2"><a class="menu__link menu__link_footer" href="#">PRODUCTS</a></li>
