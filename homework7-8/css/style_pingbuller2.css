@@ -28,7 +28,11 @@ src: url('../fonts/LeagueGothic-Regular.ttf')  format('truetype');
 
 }
 
-
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 body {
     width: 100%;
