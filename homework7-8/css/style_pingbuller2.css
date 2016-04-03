@@ -146,6 +146,8 @@ background: linear-gradient(to top, #745083,  #322539);
     color: transparent;
 }*/
 
+
+
 .h2 {
     font-size: 1.875em; /*30px/16px*/
     color: #454545;
@@ -174,13 +176,13 @@ background: linear-gradient(to top, #745083,  #322539);
     text-decoration: none;
 }
 
-.menu__link:hover {
-    color: #ffffff;
+a.menu__link:hover {
+    color: #aea1b2;
+    text-decoration: underline;
 }
 
-.menu_home:hover {
-    text-decoration: underline;
-    color: #aea1b2;
+.menu-home {
+    color: #ffffff;
 
 
 }
@@ -307,7 +309,7 @@ color: #a6a6a6;
     width: 53.125%;
     float: left;
     margin-top: 88px;
-    margin-left: -300px;
+    margin-left: -285px;
     box-sizing: border-box;
 }
 .slider__tittle {
@@ -326,8 +328,27 @@ color: #a6a6a6;
 
 .wrapper__telephone {
     float: right;
-    margin-top: -40px;
-    box-sizing: border-box;
+    width: 33%;
+    margin-top: -5px;
+    margin-right: 40px;
+    box-sizing: border-box
+}
+
+.circle_slider {
+    display: block;
+    position: absolute;
+    margin-left: 710px;
+    margin-top: -90px;
+}
+
+.trancperency {
+    width: 100%;
+    position: absolute;
+    height: 412px;
+    margin-top: -590px;
+    background-color: black;
+    opacity: 0.3;
+
 }
 
 /*ABOUT COMPANY*/
@@ -447,18 +468,22 @@ color: #a6a6a6;
     overflow: hidden;
 }
 
-.blog-circle_bupdates {
+.circle_bupdates {
     display: none;
 }
 
-.blog-circle {
-   display: block;
+.circle {
     height: 15px;
+
+}
+
+.circle_updates-1 {
+    position: absolute;
     margin-top: -30px;
     margin-left: 195px;
 }
 
-.blog-circle-white {
+.circle-white {
     display: inline-block;
     height: 15px;
     width: 15px;
@@ -470,7 +495,7 @@ color: #a6a6a6;
     behavior: url(../PIE.htc);
 }
 
-.blog-circle-violet {
+.circle-violet {
     display: inline-block;
     height: 15px;
     width: 15px;
@@ -1016,11 +1041,11 @@ footer {
         height: 170px;
     }
 
-    .blog-circle {
+    .circle {
         display: none;
     }
 
-    .blog-circle_bupdates {
+    .circle_bupdates {
         display: block;
         height: 15px;
         margin-top: 50px;
@@ -1315,11 +1340,11 @@ footer {
         height: 170px;
     }
 
-    .blog-circle {
+    .circle {
         display: none;
     }
 
-    .blog-circle_bupdates {
+    .circle_bupdates {
         display: block;
         height: 15px;
         margin-top: 40px;

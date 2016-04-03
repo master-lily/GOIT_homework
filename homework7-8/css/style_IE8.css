@@ -1,0 +1,20 @@
+.trancperency {
+    width: 100%;
+    position: absolute;
+    height: 412px;
+    margin-top: -590px;
+    background-color: black;
+    filter: opacity(30%);  /*opacity IE 8 поддерживает через фильтрб используется только для картинок???*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
