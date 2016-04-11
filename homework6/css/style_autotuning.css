@@ -633,7 +633,7 @@ form span a {
 
 .list11 {
     list-style-type: circle;
-    margin-left: 48px;
+    margin-left: 51px;
 }
 
 
@@ -668,13 +668,14 @@ form span a {
 
 }
 .list22 a {
-
+    padding-left: 7px;
     font-family: Lucida;
     font-size: 15px;
     line-height: 25px;
-    letter-spacing: 0.08em;
+    word-spacing: 0.1em;
     color: #909ba0;
     text-decoration: none;
+
 }
 
 .right_column_choosing [type="button"] {
@@ -890,14 +891,18 @@ figcaption a {
 
 .model_goodyear {
     letter-spacing: 0.065em;
+    padding-left: 8px;
+
 }
 
 .model_hankook {
     letter-spacing: 0.15em;
+    padding-right: 6px;
 }
 
 .model_nokian {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.065em;
+    padding-right: 2px;
 }
 
 .model_goodyear3 {
