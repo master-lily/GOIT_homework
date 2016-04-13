@@ -4,16 +4,12 @@
 var time = 0;
 var running = 0;
 
-function startStop(){
-    if (running === 0) {
-        running = 1;
-        countTime();
-        document.getElementById("startStop").innerHTML = 'Stop';
-    } else {
-        running = 0;
-        document.getElementById("startStop").innerHTML = 'Start';
-    }
-}
+var minutes;
+var seconds;
+var hours;
+var milliseconds;
+
+
 
 function reset() {
     time = 0;
@@ -22,10 +18,26 @@ function reset() {
     document.getElementById("output").innerHTML = "00:00:00";
 }
 
+function startStop(){
+    if (running === 0) {
+        running = 1;
+        countTime();
+        document.getElementById("startStop").innerHTML = 'Stop';
+
+    } else {
+        running = 0;
+        document.getElementById("startStop").innerHTML = 'Start';
+    }
+
+}
+
+
 
 
 startStop();
 console.log(startStop);
+
+
 
 
 function countTime() {
@@ -51,9 +63,7 @@ function countTime() {
             document.getElementById("output").innerHTML = hours + ":" + minutes + ":" + seconds + "." + milliseconds + "00";
             countTime();
 
-           /* console.log('minutes' + minutes);
-            console.log('seconds' + seconds);
-            console.log('hours' + hours);  */
+
 
         }, 100)
     }
@@ -61,6 +71,15 @@ function countTime() {
 
 
 }
+
+function split (){
+    if (running === 1) {
+        time++;
+        document.getElementById("split").innerHTML = "Split: " + hours + ":" + minutes + ":" + seconds;
+        countTime();
+    }
+}
+split();
 
 
 

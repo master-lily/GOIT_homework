@@ -103,24 +103,26 @@ form {
     border: 1px solid #82949c;
     font-size: 11px;
     color: #bfbfbf;
+    padding-left: 4px;
 
 }
 
 
 
 .registration form input[type="text"]{
-    margin-left: 22px;
-    width: 113px;
+    margin-left: 25px;
+    width: 107px;
 }
 
 
 .registration form input[type="password"] {
-    width: 111px;
+    width: 107px;
+    margin-left: 2px;
 }
 
-input[placeholder] {
+/*input[placeholder] {
     letter-spacing: 0.1em;
-}
+}*/
 
 
 .registration form input[type="submit"],
@@ -131,8 +133,9 @@ input[placeholder] {
 
 .registration form input[type="submit"] {
     border-right: 1px solid #bfbfbf;
-    margin-left: -6px;
-    margin-right: 2px;
+    margin-left: -4px;
+    margin-right: 4px;
+    padding-right: 4px;
 
 }
 
@@ -141,10 +144,10 @@ input[placeholder] {
 }
 
 form span a {
-    padding-left: 10px;
+    padding-left: 7px;
     padding-right: 5px;
     font-size: 12px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     color: #bfbfbf;
 
 
@@ -193,7 +196,7 @@ form span a {
     margin-top: 4px;
     border-radius: 20px;
     margin-left: 130px;
-    padding-left: 19px;
+    padding-left: 18px;
     padding-right: 19px;
 
 }
@@ -258,7 +261,7 @@ form span a {
     height: 32px;
     margin-left: 52px;
     padding-top: 7px;
-    padding-left: 31px;
+    padding-left: 30px;
     background: url(../img/icon-bag.png) no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
@@ -282,8 +285,9 @@ form span a {
 
 .total-currency {
     color: #0d5a8f;
-    margin-left: 6px;
-    word-spacing: 0.3em;
+    margin-left: 5px;
+    word-spacing: 0.25em;
+    letter-spacing: 0.025em;
 }
 
 
@@ -563,7 +567,7 @@ form span a {
 .list2 {
     height: 25px;
     border: 1px solid #949fa4;
-    border-radius: 20px;
+    border-radius: 12px;
     color: #114165;
     text-decoration: none;
     position: relative;
@@ -598,7 +602,7 @@ form span a {
 .list1 a,
 .list2 a  {
 
-    margin-left: 30px;
+    margin-left: 28px;
     font-family: Lucida;
     font-size: 14px;
     color: #114165;
@@ -681,10 +685,10 @@ form span a {
 .right_column_choosing [type="button"] {
     margin-top: 16px;
     margin-left: 21px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
     background: linear-gradient(to top, #0e375c, #1f6787);
-    border-radius: 10px;
+    border-radius: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 20px;
@@ -1030,27 +1034,44 @@ footer {
     display: inline-block;
     text-align: center;
     margin-top: 10px;
-    padding-left: 9px;
-    padding-right: 8px;
+
 }
 
 .footer_site_map a {
     font-size: 12px;
     line-height: 16px;
+    letter-spacing: -0.04em;
     color: #bec6c9;
     text-decoration: none;
 
 }
 
-.about_company
-.delivery
+.about_company,
+.delivery,
 .articles {
     border-right: 1px solid #6a7b87;
 }
 
 .about_company a {
     color: #52abcb;
+    padding-left: 11px;
+    padding-right: 11px;
+
 }
+
+.delivery a {
+    padding-left: 8px;
+    padding-right: 13px;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+}
+
+.articles a {
+    padding-left: 7px;
+    padding-right: 12px;
+}
+
+
 
 .delivery,
 .articles,
@@ -1058,13 +1079,19 @@ footer {
     letter-spacing: 0.025em;
 }
 
+.contacts a {
+    padding-left: 11px;
+    padding-right: 8px;
+}
 
 .copyrights {
+    padding-bottom: 40px;
+    padding-right: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    letter-spacing: 0.07em;
     color: #7f4740;
-    padding-bottom: 40px;
 }
 
 
