@@ -6,12 +6,29 @@ function pow() {
     var rate = prompt('Введите степень');
     var result = number;
 
+
+    if (rate >= 1) {
     for (var i = 1; i < rate; i++) {
         result *= number;
     }
-console.log(result);
 
+    }
+
+     else if(rate < 0) {
+        rate = Math.abs(rate);
+
+        for ( var j = 1;  j < rate; j++) {
+            result *= number;
+
+        }
+        result = 1/result;
+
+} else {
+        result = 1;
+    }
+    console.log(result);
 }
+
 pow();
 
 
