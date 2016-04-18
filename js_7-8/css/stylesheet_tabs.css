@@ -1,0 +1,68 @@
+.tabs__wrapper {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    border: 2px solid #0a1235;
+    border-radius: 5px;
+    background: linear-gradient(to top, #9da29f, #bfbfbf);
+
+}
+
+ul {
+    height: 60px;
+    background-color:  #0d5a8f;
+    opacity: 0.5;
+    border: 2px solid #0a1235;
+    border-radius: 5px;
+}
+
+li {
+    display: inline;
+    width: 400px;
+    top: 31px;
+    background-color: rosybrown;
+    opacity: 0.9;
+    border: 2px solid #0a1235;
+    border-radius: 5px;
+    height: 50px;
+    position: relative;
+    padding: 10px;
+
+
+}
+
+
+a {
+
+    font-size:20px;
+    font-family: 'FranchiseRegular', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+}
+
+
+
+
+.tabs__item {
+    display: none;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ .tabs__item.active {
+    display: block;
+     font-size: 18px;
+     font-family:  Arial, sans-serif;
+     line-height: 1.4;
+
+
+}
+
+li.active {
+    background-color: beige;
+}
