@@ -161,7 +161,7 @@ form span a {
     display: block;
     margin-top: 19px;
     margin-right: 9px;
-    padding-left: 9px;
+    padding-left: 6px;
     padding-right: 9px;
     border: 1px solid #d1d6d8;
     border-radius: 10px;
@@ -574,6 +574,10 @@ form span a {
 
 }
 
+.catalog img {
+    margin-left: -5px;
+}
+
 .catalog,
 .brend {
     box-shadow: 3px 3px 3px 0 rgba(150, 150, 150, 0.75);
@@ -609,19 +613,29 @@ form span a {
     text-decoration: none;
 }
 
-.list1 .list1_span,
+.list1 .list1_span {
+    position: absolute;
+    margin-top: 5px;
+
+}
+
 .list2 .list2_span {
+    position: absolute;
+    margin-top: 4px;
+
+}
+
+.list2 .list21_span {
     position: absolute;
     margin-top: 5px;
 
 }
 
 .text-center {
-    margin-left: -2px;
+   /* margin-left: -2px;*/
     position: absolute;
     font-family: Lucida;
     font-size: 12px;
-
     vertical-align: middle;
 }
 
@@ -637,9 +651,12 @@ form span a {
 
 .list11 {
     list-style-type: circle;
-    margin-left: 51px;
+    margin-left: 47px;
 }
 
+.list11 li a:before  {
+    padding-right: 10px;
+}
 
 .list11 a {
    text-decoration: none;
@@ -648,6 +665,8 @@ form span a {
     line-height: 25px;
     color: #909ba0;
 }
+
+
 
 .list111 a:hover {
     text-decoration: underline;
@@ -662,13 +681,19 @@ form span a {
     margin-top: 5px;
 }
 
+.brend img {
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
 .list22 {
     list-style-type: square;
     margin-left: 40px;
+    margin-top: 2px;
 }
 
 .list22a {
-    margin-top: 2px;
+
 
 }
 .list22 a {
@@ -727,9 +752,11 @@ main {
 
 .goodyear {
     margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 24px;
+    margin-top: 21px;
+    margin-bottom: 21px;
 }
+
+
 
 figcaption a {
     display: block;
@@ -753,10 +780,10 @@ figcaption a {
 
 .price {
     display: inline-block;
-    padding-left: 17px;
+    padding-left: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.015em;
+    letter-spacing: 0.03em;
     font-weight: bold;
     font-style: italic;
     color: #114165;
@@ -797,28 +824,28 @@ figcaption a {
 .goodyear img {
     padding-left: 25px;
     padding-right: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     background: #ffffff;
     border: 1px solid #a4aeb1;
     border-radius: 10px;
 }
 
 .goodyear1 img{
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 1px;
+   /* padding-top: 2px;
+    padding-bottom: 2px;*/
+    margin-top: 2px;
 }
 
 .goodyear2 img{
     margin-top: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 0;
 }
 
 .goodyear3 img{
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: -4px;
+    padding-top: 1px;
+    margin-top: 4px;
+
 }
 
 
@@ -849,19 +876,19 @@ figcaption a {
 .nokian2 img {
     margin-top: 3px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 .nokian3 img {
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     margin-top: 2px;
 
 }
 
 .hankook {
     margin-right: 16px;
-    margin-top: 20px;
-    margin-bottom: 24px;
+    margin-top: 21px;
+    margin-bottom: 21px;
 }
 
 .hankook img {
@@ -874,50 +901,59 @@ figcaption a {
 }
 
 .hankook1 img {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 2px;
     margin-top: 1px;
-
 }
 
 .hankook2 img {
     margin-top: 1px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 
 
 }
 .hankook3 img {
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-top: -4px;
+    margin-top: 2px;
 }
 
 .model_goodyear {
     letter-spacing: 0.065em;
-    padding-left: 8px;
+    padding-left: 2px;
 
 }
 
 .model_hankook {
     letter-spacing: 0.15em;
-    padding-right: 6px;
+    /*padding-right: 6px;*/
 }
 
 .model_nokian {
     letter-spacing: 0.065em;
-    padding-right: 2px;
+    padding-left: 5px;
 }
 
-.model_goodyear3 {
+/*.model_goodyear3 {
     line-height: 22px;
+}*/
+
+
+.a_nokian1 {
+    display: inline-block;
+    padding-left: 4px;
 }
 
-
-
+.a_nokian2 {
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 2px;
+}
 .a_nokian3 {
   display: inline-block;
     margin-top: 7px;
+    padding-left: 4px;
 }
 
 .model_nokian3 {
@@ -925,34 +961,37 @@ figcaption a {
     margin-top: 7px;
 }
 
+.a_hankook1 {
+    display: inline-block;
+    padding-left: 5px;
+}
 .a_hankook2 {
     display: inline-block;
-    margin-top: 3px;
+    margin-top: 7px;
+    padding-left: 5px;
 }
 
 .a_hankook3 {
     display: inline-block;
-    margin-top: 4px;
+    margin-top:9px;
+    padding-left: 5px;
 }
 
 .a_goodyear2 {
     display: inline-block;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 .a_goodyear3 {
     display: inline-block;
-    margin-top: 2px;
+    margin-top: 8px;
 }
 
-.a_nokian2 {
-    display: inline-block;
-    margin-top: 2px;
-}
 
-.model_hankook3 {
+
+/*.model_hankook3 {
     line-height: 22px;
-}
+}*/
 
 
 /* logo_companies*/
