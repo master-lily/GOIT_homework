@@ -1,0 +1,41 @@
+.wrapper {
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+    border: 1px solid grey;
+}
+
+.form_wrapper {
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+label {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.input {
+    position: relative;
+}
+
+.f-tooltip,
+.l-tooltip,
+.ad-tooltip {
+    position: absolute;
+    line-height: 30px;
+    width: 200px;
+    float: right;
+    margin-top: -25px;
+    margin-left: 270px;
+    font-size: 12px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    display: none;
+
+}
+
+.tooltip {
+    display: none;
+}
