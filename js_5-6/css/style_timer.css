@@ -1,0 +1,27 @@
+body {
+    background-color: #745083;
+}
+
+.wrapper {
+    margin: 90px auto;
+    width: 286px;
+    height: 126px;
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+
+.watch {
+    font-size: 50px;
+    text-align: center;
+}
+
+button {
+    margin-left:5px;
+    border-radius: 10px;
+    font-size: 46px;
+    outline: none;
+}
+
+button:hover {
+    border-radius: 10px;
+}
