@@ -44,7 +44,7 @@ function countTime() {
              hours = Math.floor(time/10/60/60);
           /*  milliseconds = parseInt(time/10);
             milliseconds =parseInt(time%10);*/
-            milliseconds=Math.floor(time/1000%1000);
+            milliseconds=Math.floor(time%10);
 
 
             if (hours < 10) {
