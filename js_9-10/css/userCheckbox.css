@@ -1,0 +1,21 @@
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+   background: url(../img/checkbox-sprite.png);
+    /*download pictures for checkbox!!!*/
+}
+
+.niceChecked {
+    background-position: 0 -17px;
+}
+
+.niceCheck input {
+    margin-left: -1000px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.niceCheckDisabled {
+  background: url(../img/checkbox-sprite.png);
+}
+

@@ -8,15 +8,21 @@
 .form_wrapper {
     border: 1px solid grey;
     margin: 10px;
+    padding-top: 10px;
 }
 
 label {
-    padding-right: 10px;
+
     padding-left: 10px;
 }
 
 .input {
     position: relative;
+    margin-left: 10px;
+}
+
+#adress  {
+    margin-left: 27px;
 }
 
 .f-tooltip,
@@ -38,4 +44,8 @@ label {
 
 .tooltip {
     display: none;
+}
+
+.button {
+    margin-left: 20px;
 }
