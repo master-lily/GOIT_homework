@@ -16,6 +16,7 @@
 }
 
 .niceCheckDisabled {
+    /*display: none;*/
   background: url(../img/checkbox-sprite.png);
 }
 

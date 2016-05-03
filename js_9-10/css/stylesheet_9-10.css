@@ -1,4 +1,4 @@
-/*input[type=checkbox] {
+input[type=checkbox] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
@@ -10,7 +10,7 @@ label:after {
     display: inline-block;
     width: 17px;
     height: 17px;
-    !!!!background: url(img/checkbox-2.png);
+    /*!!!!background: url(img/checkbox-2.png);*/
     position: relative;
     top: 3px;
     margin-left: 15px;
@@ -23,7 +23,116 @@ label:hover:after {
 }
 input[type=checkbox]:checked + label:hover:after {
     background-position: 0 -51px;
-}*/
+}
+
+
+.wrapper {
+    width: 960px;
+    height: 800px;
+    margin: 0 auto;
+    background: #aea1b2;
+
+
+}
+
+
+/* MENU*/
+.menu {
+
+}
+
+.firstLevelMenu {
+    height: 40px;
+    text-align: center;
+    position: relative;
+    border: 1px solid green;
+    background: repeating-linear-gradient(to top, #745083, #114165);
+    border-radius: 5px;
+
+}
+
+ul, li {
+    list-style: none;
+}
+
+.firstLevelMenu li {
+    display: inline-block;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+ a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.secondLevelMenu,
+.thirdLevelMenu {
+    display: none;
+}
+
+.secondLevelMenu {
+    margin-top: 11px;
+    margin-left: -30px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+.secondLevelMenu li,
+.thirdLevelMenu li {
+    display: block;
+}
+
+.secondLevelMenu li:last-child {
+    padding-bottom: 12px;
+}
+
+
+.thirdLevelMenu {
+    margin-top: -30px;
+    margin-left: 90px;
+    padding-left: 5px;
+    position: absolute;
+
+}
+
+.thirdLevelMenu li {
+    width: 75px;
+}
+
+/*animation dropdown menu*/
+ul.secondLevelMenu {
+    background: repeating-linear-gradient(to bottom, #745083, #114165); /* задаем начальный цвет для выпадающего меню*/
+}
+
+ul.thirdLevelMenu {
+    background: repeating-linear-gradient(to top, #745083, #114165);
+}
+
+
+
+/*CHECKBOX*/
+
+.checkbox {
+    margin-top: 20px;
+}
+
+.checkbox div {
+    margin-top: 6px;
+}
+
+label {
+    padding-left: 10px;
+    margin-top: -5px;
+    position: absolute;
+}
+
+
+
+
+
 /*
 git config --global core.safecrlf false
 */

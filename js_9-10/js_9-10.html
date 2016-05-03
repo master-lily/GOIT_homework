@@ -3,29 +3,30 @@
 <head lang="en">
         <meta charset="UTF-8">
        <title>Different styles</title>
-        <link rel="stylesheet" href="css/reset.css">
 
-    <!-- CHECKBOX ON CSS -->
-    <!--<link rel="stylesheet" href="css/stylesheet_9-10.css">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet_9-10.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/script_9-10.js"></script>
 
+    <!-- CHECKBOX ON CSS | javascript-->
     <link rel="stylesheet" href="css/userCheckbox.css">
-
-        <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/userCheckbox.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 
-    <!-- Shared assets -->
-    <link rel="stylesheet" type="text/css" href="../_shared/css/style.css">
 
-    <!-- Example assets  JCarusel-->
+    <!--  JCarusel-->
     <link rel="stylesheet" href="css/jcarousel.basic.css">
-
-    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-
     <script type="text/javascript" src="js/jcarousel.basic.js"></script>
 
+
+    <!-- CUSTOM SELECT BOX -->
+    <link rel="stylesheet" href="css/selectric.css">
+    <script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+
+    <!-- animation for dropdown menu -->
     <script type="text/javascript" src="js/jquery.color.js"></script>
+
 
      </head>
 <body>
@@ -55,27 +56,28 @@
 
         </p>
     </div>
-</div>
 
 
 
-<nav class="menu">
-    <ul>
+
+<nav>
+    <ul class="firstLevelMenu">
         <li><a href="">Menu 1</a></li>
         <li><a href="">Menu 2</a></li>
         <li><a href="">
             Menu 3</a>
-            <ul>
+            <ul class="secondLevelMenu">
                 <li><a href="">Menu 3.1</a></li>
                 <li><a href="">Menu 3.2</a></li>
-                <li><a href="">Menu 3.3</a></li>
-                <ul>
+                <li><a href="">Menu 3.3</a>
+                <ul class="thirdLevelMenu">
                     <li><a href="">Menu 3.3.1</a></li>
                     <li><a href="">Menu 3.3.2</a></li>
                     <li><a href="">Menu 3.3.3</a></li>
                     <li><a href="">Menu 3.3.4</a></li>
                     <li><a href="">Menu 3.3.5</a></li>
                 </ul>
+                </li>
                 <li><a href="">Menu 3.4</a></li>
                 <li><a href="">Menu 3.5</a></li>
             </ul>
@@ -91,23 +93,23 @@
 <form action="#" method="post">
 
     <div class="selects">
-    <select>
+        <select>
         <option value="1">Select 1</option>
         <option value="2">Select 2</option>
         <option value="3">Select 3</option>
-        <option value="4">Select4</option>
+        <option value="4">Select 4</option>
         <option value="5">Select 5</option>
     </select>
     </div>
+
     <div class="checkbox">
         <!-- insert pictures of checkbox to css background-->
-        <label>
-            <label for="ch1"><span class="niceCheck"><input type="checkbox" id="ch1" value="first_checkbox" tabindex="1"></span>checkbox 1</label>
-            <label for="ch2"><span class="niceCheck"><input type="checkbox" id="ch2" checked="checked" tabindex="2" value="second_checkbox"></span>checkbox 2</label>
-            <label for="ch3"><span class="niceCheck"><input type="checkbox" id="ch3" checked="checked" disabled="disabled"></span>checkbox 3</label>
-
-        </label>
+           <div><input type="checkbox"  class="niceCheck" id="ch1" value="first_checkbox" tabindex="1"><label for="ch1">checkbox 1</label></div>
+            <div><input type="checkbox" class="niceCheck" id="ch2" checked="checked" tabindex="2" value="second_checkbox"><label for="ch2">checkbox 2</label></div>
+            <div><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled"><label for="ch3">checkbox 3</label></div>
     </div>
+
 </form>
+</div>
 </body>
 </html>
