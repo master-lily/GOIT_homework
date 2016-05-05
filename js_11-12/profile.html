@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script src="js/myProfile.js"></script>
+</head>
+<body>
+
+
+
+
+
+<script type="text/html" id="profile">
+<div class="wrapper">
+   <div class="main_information">
+   <h1><%= myName %></h1>
+       <p class="main_photo">
+           <img src="img/cat.jpg" alt="cat" width="130" height="130">
+       </p>
+    <p class="worker"><%= whatI %></p>
+       </div>
+
+   <hr>
+   <div class="my_wishes">
+       <p class="learning"><%= wishes %></p>
+       <ul class="my_interests">
+           <li><%= interests1 %></li>
+           <li><%= interests2 %></li>
+           <li><%= interests3 %></li>
+       </ul>
+   </div>
+
+   <hr>
+
+   <div class="contacts">
+       <p><%= phone %><br>
+           <%= phoneNumber%></p>
+   </div>
+
+   <div class="profile">
+       <p><%= social %><br>
+           <a href=""><%= socialSite %></a></p>
+   </div>
+   <hr>
+   <div class="feedback">
+       <p><%= feedback %><br>
+           <%= can %></p>
+   </div>
+</div>
+
+</script>
+
+
+
+
+<!--<div class="about_me">
+    <div class="main_information">
+        <h1>Lily Losik </h1>
+
+        <p class="main_photo">
+            <img src="img/cat.jpg" alt="cat" width="130" height="130">
+        </p>
+        <p class="worker">I am a worker</p>
+    </div>
+    <hr>
+    <div class="my_wishes">
+        <p class="learning">I would like to learn frontend because:</p>
+
+
+        <ul class="my_interests">
+            <li>It is interesting</li>
+            <li>I like to create new items</li>
+            <li>I like study new</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="contacts">
+        <p>My contact phone <br>
+            +380955338337</p>
+    </div>
+
+    <div class="profile">
+        <p>I am in vkontakte<br>
+            <a href="http://www.vk.com">vk.com</a></p>
+    </div>
+    <hr>
+    <div class="feedback">
+        <p>My Feedback <br>
+            I can do many things</p>
+    </div>
+</div>-->
+</body>
+</html>
