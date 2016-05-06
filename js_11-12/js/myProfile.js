@@ -1,13 +1,7 @@
 /**
  * Created by Lily on 05.05.2016.
  */
-/*$(function(){
-    var html = $('#profile').html();
-    console.log('template', html);
-    var data = {myName: 'Lily Losik'};
-    var content = tmpl(html, data);
-    $('body').append(content);
-});*/
+
 
 $(function(){
     var html=$('#profile').html();
@@ -32,31 +26,3 @@ $(function(){
     $('body').append(content);
 });
 
-/*
-<div class="my_wishes">
-<p class="learning">I would like to learn frontend because:</p>
-
-
-<ul class="my_interests">
-<li>It is interesting</li>
-<li>I like to create new items</li>
-<li>I like study new</li>
-</ul>
-</div>
-
-<hr>
-
-<div class="contacts">
-<p>My contact phone <br>
-+380955338337</p>
-</div>
-
-<div class="profile">
-<p>I am in vkontakte<br>
-<a href="http://www.vk.com">vk.com</a></p>
-</div>
-<hr>
-<div class="feedback">
-<p>My Feedback <br>
-I can do many things</p>
-</div>*/
