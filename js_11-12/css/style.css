@@ -1,27 +1,24 @@
 
 
 .wrapper {
-    width: 960px;
+    width: 420px;
     height: 1000px;
     box-sizing: border-box;
-
-    background-color: lightgrey;
-    margin: 0 auto;
-}
-
-
-.about_me{
-    width: 420px;
     margin: 0 auto;
     padding: 15px 45px 30px;
-    border:2px solid grey;
-    background-color: #ffffff;
+    background:linear-gradient(to top, #5893bc, #6a7b87) ;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
+
+
 h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
     text-align: center;
+
 }
 
 
@@ -35,7 +32,8 @@ a{
 }
 
 p, a, li {
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 .worker,
@@ -80,4 +78,3 @@ hr {
     padding-top:0;
     padding-bottom:0;
 }
-
