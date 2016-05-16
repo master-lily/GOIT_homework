@@ -7,6 +7,7 @@ var test = {
     testWrapper: document.createElement('div'),
     testHeader: document.createElement('h1'),
     testContent: document.createElement('content'),
+    questionForm: document.createElement ('form'),
     testButton: document.createElement('button'),
 
 
@@ -16,16 +17,20 @@ var test = {
         this.testHeader.classList.add('test-tittle');
         this.testButton.classList.add('btn');
 
-        /*this.testWrapper = document.querySelector('.wrapper');* - почему с этой строчкой не работает???*/
-
         this.testHeader.innerHTML = 'Тест по программированию';
         this.testButton.innerHTML = 'Проверить мои результаты';
 
         this.testBody.appendChild(this.testWrapper);
         this.testWrapper.appendChild(this.testHeader);
         this.testWrapper.appendChild(this.testContent);
+        this.testContent.appendChild(this.questionForm);
         this.testWrapper.appendChild(this.testButton);
+
+
+        this.questionForm.setAttribute('action', '#');
         this.testButton.setAttribute('value', 'submit');
+
+
     },
 
     createTestQuestion: function () {
@@ -36,38 +41,34 @@ var test = {
         for (var i = 1; i < 4; i++) {
             this.questionWrapper = document.createElement('div');
             this.questionTittle = document.createElement('h2');
-            this.questionForm = document.createElement ('form');
+
 
             this.questionWrapper.classList.add('question-wrapper');
             this.questionTittle.classList.add('question-tittle');
-            this.questionForm.classList.add('question-form');
-
             this.questionTittle.innerHTML = i + '. Вопрос №' + i;
 
-            this.testContent.appendChild(this.questionWrapper);
-            this.questionWrapper.appendChild(this.questionTittle);
-            this.questionTittle.appendChild(this.questionForm);
+            this.questionForm.appendChild(this.questionTittle);
+            this.questionForm.appendChild(this.questionWrapper);
 
-            this.questionForm.setAttribute('action', '#');
+
 
 
             for (var j=1; j < 4; j++) {
-
-                this.input = document.createElement('input');
                 this.label = document.createElement('label');
-                this.answerText = document.createElement('text');
+                this.input = document.createElement('input');
 
                 this.label.setAttribute('for', 'question' + question);
                 this.input.setAttribute('type', 'checkbox');
                 this.input.setAttribute( 'id', 'question' + question);
 
-                this.answerText.innerHTML = 'Вариант ответа № ' + j;
+                this.label.innerHTML = 'Вариант ответа № ' + j;
 
                 this.input.classList.add('input');
-                this.answerText.classList.add('answer-text');
-                this.questionForm.appendChild(this.input);
-                this.questionForm.appendChild(this.label);
-                this.label.appendChild(this.answerText);
+
+
+                this.questionWrapper.appendChild(this.label);
+                this.questionWrapper.appendChild(this.input);
+
 
                 question++;
             }

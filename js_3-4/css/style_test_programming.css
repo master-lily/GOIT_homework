@@ -14,8 +14,9 @@
     font-weight: bold;
 }
 
-.question-wrapper {
+form {
     display: block;
+
 }
 
 .question-tittle {
@@ -25,24 +26,29 @@
     font-weight: bold;
 }
 
-.question-form {
+.question-wrapper {
     display: block;
     position: relative;
     width: 170px;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 
-
-.answer-text {
+label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    line-height: 18px;
 }
 
 
+.input {
+    margin-left: -155px;
+    position: absolute;
+}
+
 .btn {
-   margin: 30px 200px;
+    margin: 30px 200px;
     padding: 10px 30px;
     position: relative;
     vertical-align: middle;
