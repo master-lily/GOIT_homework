@@ -71,7 +71,7 @@ function changeCheckStart(el)
         checkTab = el.attr("tabindex"),
         checkValue = el.attr("value");
         if(checkChecked)
-        el.after("<span class='niceCheck niceChecked'>"+
+        el.after("<span class='checkbox-js niceChecked'>"+
         "<input type='checkbox'"+
         "name='"+checkName+"'"+
         "id='"+checkId+"'"+
@@ -79,7 +79,7 @@ function changeCheckStart(el)
         "value='"+checkValue+"'"+
         "tabindex='"+checkTab+"' /></span>");
     else
-        el.after("<span class='niceCheck'>"+
+        el.after("<span class='checkbox-js'>"+
         "<input type='checkbox'"+
         "name='"+checkName+"'"+
         "id='"+checkId+"'"+

@@ -1,27 +1,27 @@
-input[type=checkbox] {
+.checkbox-css input[type=checkbox] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
-label {
+.checkbox-css label {
     cursor: pointer;
 }
-label:after {
+.checkbox-css label:after {
     content: " ";
     display: inline-block;
     width: 17px;
     height: 17px;
-    /*!!!!background: url(img/checkbox-2.png);*/
+    background: url(../img/checkbox-sprite_2.png); /*взяла тоже картинку спрайта*/
     position: relative;
     top: 3px;
     margin-left: 15px;
 }
-input[type=checkbox]:checked + label:after {
+.checkbox-css input[type=checkbox]:checked +  label:after {
     background-position: 0 -17px;
 }
-label:hover:after {
+.checkbox-css label:hover:after {
     background-position: 0 -34px;
 }
-input[type=checkbox]:checked + label:hover:after {
+.checkbox-css input[type=checkbox]:checked +  label:hover:after {
     background-position: 0 -51px;
 }
 
@@ -125,11 +125,39 @@ ul.thirdLevelMenu {
 
 label {
     padding-left: 10px;
-    margin-top: -5px;
+    margin-top: 5px;
     position: absolute;
 }
 
+.checkbox  h1 {
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: underline;
 
+}
+
+/* CHECKBOX2 */
+.checkbox2 {
+    display: block;
+    margin-top: 20px;
+}
+
+.checkbox2 div {
+    margin-top: 6px;
+}
+
+.checkbox2 label {
+    padding-left: 10px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.checkbox2  h1 {
+    font-weight: bold;
+    margin-left: 25px;
+   text-decoration: underline;
+
+}
 
 
 
