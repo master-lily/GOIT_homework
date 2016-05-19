@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test-style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+</head>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test-style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+</head>
+<body>
+
+
+<h2>Тест по программированию</h2>
+<button class="show_test">Пройти тест</button>
+
+<script type="text/html" id="test">
+    <div class="container">
+        <form action="" method="post">
+            <ol>
+                <% for (var i = 0; i < data.length; i++) { %>
+
+                <li><%= data[i].question %>
+
+                    <ul>
+                        <% for (var j = 0; j < data[i].answer.length; j++) { %>
+                        <li><input type="radio" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].check[j] %>"><%= data[i].answer[j] %></li>
+                        <% }; %>
+
+
+
+                        <% }; %></ul>
+                </li>
+
+            </ol>
+        </form>
+    </div>
+</script>
+<button class="check">Проверить мои результаты</button>
+<div class="modal_window">
+    <p class="modal_text"></p>
+    <div class="modal_button">X</div>
+</div>
+<div class="overlay"></div>
+</body>
+</html>
+
+<!-- http://dontforget.pro/javascript/prostoe-modalnoe-okno-na-jquery-i-css-bez-plaginov/   - modal window -->
+<!-- http://dontforget.pro/javascript/prostoe-modalnoe-okno-na-jquery-i-css-bez-plaginov/   - modal window -->
