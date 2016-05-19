@@ -9,14 +9,14 @@ var testData = [
     {
         question: 'Вопрос №1',
         answer: ['Ответ №1', 'Ответ №2', 'Ответ №3'],
-        check: ['true', 'false', 'false'],
-        name: 'first'
+        check: [ 'false', 'true', 'false'],
+        name: 'second'
     },
     {
         question: 'Вопрос №2',
         answer: ['Ответ №1', 'Ответ №2', 'Ответ №3'],
-        check: ['false', 'true', 'false'],
-        name: 'second'
+        check:  ['true', 'false', 'false'],
+        name: 'first'
     },
     {
         question: 'Вопрос №3',
