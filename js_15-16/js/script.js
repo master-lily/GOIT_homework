@@ -1,15 +1,17 @@
 /**
  * Created by Lily on 22.05.2016.
  */
+
 (function() {
-    var cx = '017270073310002898913:evb0ddnorps';
+    var cx = '017270073310002898913:lawqytdb75y';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?=' + cx;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
 })();
+
 
 
 
