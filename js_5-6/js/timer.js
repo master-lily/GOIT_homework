@@ -39,12 +39,12 @@ function countTime() {
     if (running === 1) {
         setTimeout(function() {
             time++;
-          minutes = Math.floor(time/10/60);
-             seconds = Math.floor(time/10 % 60);
-             hours = Math.floor(time/10/60/60);
-          /*  milliseconds = parseInt(time/10);
-            milliseconds =parseInt(time%10);*/
-            milliseconds=Math.floor(time%10);
+
+
+            milliseconds = (time-1)% 1000;
+            seconds = Math.floor((time-1) / 1000 % 60);
+            minutes = Math.floor((time-1) / 60000 % 60);
+            hours = Math.floor((time-1) / 86400000 % 24);
 
 
             if (hours < 10) {
@@ -61,12 +61,12 @@ function countTime() {
 
 
 
-            document.getElementById("output").innerHTML = hours + ":" + minutes + ":" + seconds + "." + milliseconds + "00";
+            document.getElementById("output").innerHTML = hours + ":" + minutes + ":" + seconds + "." + milliseconds;
             countTime();
 
 
 
-        }, 10)
+        }, 1)
     }
 }
 
