@@ -1,0 +1,37 @@
+.squares1 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: $black;
+  border: 3px solid $white;
+  box-sizing: border-box;
+}
+
+.squares2 {
+@extend .squares1;
+  background-color: $white;
+  border: none;
+  margin-left: 11px;
+}
+
+.white__1 {
+  background: $white;
+  width: 1920px;
+  height: 1012px;
+}
+
+.white__2 {
+  @extend .white__1;
+  height: 783px;
+}
+
+.darkgrey__1 {
+  background: $footer1-slider-panel;
+  width: 1920px;
+  height: 500px;
+}
+
+.darkgrey__2 {
+  @extend .darkgrey__1;
+  height: 328px;
+}
