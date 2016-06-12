@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;;
+    margin: 0;
+    padding: 0;
+    background-color: #5893bc;
+    opacity: 0.9;
+}
+h2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.container {
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+ol {
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+}
+
+li {
+    margin-top: 7px;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    vertical-align: middle;
+    background: lavender;
+    border: 3px solid darkgray;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: darksalmon;
+}
+
+.check {
+    display: none;
+}
+.modal_window {
+    display: none;
+    height: 300px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    position: fixed;
+    z-index: 5;
+    background: #6a7b87;
+    box-shadow: 3px 2px 7px 8px beige;
+    border-radius: 12px;
+
+}
+.modal_text {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.modal_button {
+    position: absolute;
+    top: 3%;
+    left: 94%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.overlay {
+    display: none;
+    background-color: #0c3256;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+}
