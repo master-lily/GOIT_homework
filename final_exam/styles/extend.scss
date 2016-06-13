@@ -1,0 +1,12 @@
+.holiday__button {
+  color: $white;
+  font: 14px $montserratB;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+}
+
+.holiday__button--1 {
+  @extend .holiday__button;
+  border: 2px solid $white;
+}

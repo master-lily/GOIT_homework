@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.holiday__button, .holiday__button--1 {
+  color: white;
+  font: 14px Montserrat Bold, sans-serif;
+  padding: 10px 15px;
+  background: none;
+  border: none; }
+
+.holiday__button--1 {
+  border: 2px solid white; }
+
+.holiday__button--1,
+.holiday__button--2,
+.slider__button,
+.partners__other,
+.search__button-partners {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+@media (max-width: 320px) {
+  header {
+    background: url(../img/header_desktop.jpg) no-repeat; }
+
+  .holiday {
+    width: 100%;
+    height: 542px; }
+
+  .holiday-buttons {
+    display: block;
+    margin-top: 20px;
+    text-align: center; } }
+.holiday__button--1,
+.holiday__button--2,
+.slider__button,
+.partners__other,
+.search__button-partners {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=main.css.map */

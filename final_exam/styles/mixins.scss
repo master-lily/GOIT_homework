@@ -1,0 +1,14 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.holiday__button--1,
+.holiday__button--2,
+.slider__button,
+.partners__other,
+.search__button-partners {
+  @include border-radius(20px);
+}
