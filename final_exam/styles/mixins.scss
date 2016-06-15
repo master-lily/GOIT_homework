@@ -12,3 +12,7 @@
 .search__button-partners {
   @include border-radius(20px);
 }
+
+input[type="search"] {
+  @include border-radius(5px);
+}

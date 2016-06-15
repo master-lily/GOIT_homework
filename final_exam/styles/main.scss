@@ -3,7 +3,9 @@ $montserratB:  Montserrat Bold, sans-serif;
 $robotoL: Roboto Light, sans-serif;
 
 $light-red: #ff4e50;
-
+$grey: #b8b8b8;
+$dark-grey: #a0a0a0;
+$g-grey: #b4b4b4;
 $white: white;
 $black: black;
 * {
@@ -15,27 +17,1361 @@ $black: black;
 @import 'extend';
 @import 'mixins';
 
-@media (max-width: 320px) {
-header {
-  background: url(../img/header_desktop.jpg) no-repeat;
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
+
+//MAX WIDTH 320PX
+
+@media (max-width: 320px) {
+
+  //  HEADER
+  .wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  header {
+ width: 100%;
+    background-image: url(../img/header_mobile.jpg);
+    background-position: center top;
+    background-size: cover;
+    color: white;
+  }
 
   .holiday {
     width: 100%;
-height: 542px;
+    height: 542px;
   }
 
   .holiday-buttons {
-    display:block;
-    margin-top: 20px;
+    width: 25%;
+    height: 34px;
+    display: block;
+    position: absolute;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .holiday__company-name {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 66px;
+    font: 20px $montserratB;
     text-align: center;
 
   }
 
+  .holiday__title {
+    margin-top: 230px;
+    font: 30px $montserratB;
+    text-align: center;
+  }
+
+  .holiday__text {
+    width: 80%;
+    margin: 20px auto 0;
+    text-align: center;
+    font: 20px $robotoL;
+  }
+
+  /*SLIDER*/
+  //
+
+  .slider {
+    position: relative;
+    width: 100%;
+    /*margin-left: 10px;*/
+    height: 815px;
+    overflow: hidden;
+    color: $white;
+  }
+
+  .slider__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font: 22px $montserratB;
+    color: $black;
+  }
+
+  .slider__wrapper {
+    position: relative;
+    width: 93.75%;
+    height: 240px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .slider__container {
+    position: relative;
+    overflow: hidden;
+    /*height: 240px;*/
+    /*width: 93.75%;*/
+
+  }
+
+  .slider__container ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider__container li {
+    float: left;
+  }
+
+  .slider-content {
+    position: absolute;
+    margin-top: -169px;
+    margin-left: 20px;
+  }
+
+  .slider__button {
+    background-color: $light-red;
+    padding: 5px 10px;
+    font: 10px $montserratR;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  .slider-content__title {
+    font: 24px $montserratB;
+    padding-top: 15px;
+  }
+
+  .slider-content__text {
+    padding-top: 15px;
+    font: 14px $robotoL;
+    color: $grey;
+  }
+
+  //  .slider__image1 {
+  //      background: url(../img/image1_mobile.jpg);
+  //    }
+  //
+  //  .slider__image2 {
+  //    background: url(../img/image2_mobile.jpg);
+  //  }
+  //
+  //  .slider__image3 {
+  //    background: url(../img/image3_mobile.jpg);
+  //  }
 
 
+
+
+//PARTNERS
+
+.partners {
+  height: 1095px;
+  width: 100%;
 
 }
+
+.partners__title {
+  width: 85%;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  color: $black;
+  font: 22px $montserratB;
+}
+
+ .partners__partners {
+   display: block;
+ }
+
+.partners__wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+  .partners__wrapper--4 {
+    margin-top: 0;
+  }
+.partners__icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  width: 135px;
+  height: 135px;
+}
+
+.partners__avatar {
+  width: 120px;
+  height: 120px;
+ margin: 10px auto;
+}
+
+.partners__avatar--1 {
+  background: url(../img/partners_avatar_1.png);
+}
+
+.partners__avatar--2 {
+  background: url(../img/partners_avatar_2.png);
+}
+
+.partners__avatar--3 {
+  background: url(../img/partners_avatar_3.png);
+}
+
+.partners__avatar--4 {
+  background: url(../img/partners_avatar_4.png);
+}
+
+.partners__sign {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: -43px;
+  margin-left: 95px;
+}
+
+.partners__sign--1 {
+  background: url(../img/partners_sign_1.png);
+}
+
+.partners__sign--2 {
+  background: url(../img/partners_sign_2.png);
+}
+
+.partners__sign--3 {
+  background: url(../img/partners_sign_3.png);
+}
+
+.partners__sign--4 {
+  background: url(../img/partners_sign_4.png);
+}
+
+.partners__name {
+  padding-top: 15px;
+  font: 14px $montserratB;
+  color: $black;
+  text-align: center;
+}
+
+.partners__about {
+  width: 76%;
+  padding-top: 10px;
+  margin: 0 auto;
+  font: 14px $robotoL;
+  color: $grey;
+  text-align: center;
+}
+
+
+//HOLIDAY ACTIVITY
+.holiday-activity {
+  height: 1010px;
+}
+
+.holiday-activity__title {
+  margin-top: 30px;
+  font: 22px $montserratB;
+  color: $black;
+  text-align: center;
+}
+
+//SEARCH
+.search {
+  height: 255px;
+border-bottom: 3px solid $light-red;
+}
+
+.search__title {
+  width: 90%;
+  margin: 25px auto 0;
+  font: 22px $montserratB;
+  color: $black;
+  text-align: center;
+}
+
+.search__text {
+  padding-top: 20px;
+  font: 18px $robotoL;
+  color: $dark-grey;
+  text-align: center;
+}
+
+input[type="search"] {
+  width: 275px;
+  height: 40px;
+  margin: 15px auto;
+  border: 1px solid $g-grey;
+}
+
+input[placeholder] {
+  font: 14px $robotoL;
+  color: $g-grey;
+  padding-left: 10px;
+}
+
+
+//FOOTER
+
+.footer__wrapper {
+  height: 190px;
+  margin: 0 auto;
+}
+
+.footer__company-name {
+  padding-top: 15px;
+  font: 16px $montserratB;
+  color: $light-red;
+  text-align: center;
+}
+
+
+
+.footer__menu {
+  display: block;
+  width: 70%;
+  height: 15px;
+  margin-left: 50px; //50/320
+  text-align: center;
+
+}
+
+.footer__company {
+  padding-top: 10px;
+  font: 14px $montserratB;
+  color: $black;
+  text-align: center;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__link {
+  font: 14px $robotoL;
+  color: $grey;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.footer__partners {
+  font: 14px $robotoL;
+  color: $grey;
+  text-decoration: none;
+  padding-left: 10px; //10/320
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer__design {
+  font: 10px $montserratB;
+  color: $g-grey;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer__design-logo {
+  width: 35%;
+  height: 40px;
+  margin: 5px auto;
+ background: url(../img/footer_designe_logo.png) no-repeat;
+}
+}
+
+//
+//MEDIA (MIN-WIDTH 321 PX) AND (MAX-WIDTH 768PX)
+
+@media (min-width: 321px) and (max-width: 768px) {
+  //  HEADER
+
+  header {
+    max-width: 768px;
+    height: 700px;
+    background-image: url(../img/header_tablet.jpg);
+      background-position: center top;
+      background-size: cover;
+    color: white;
+  }
+
+  .holiday {
+    width: 100%;
+    height: 700px;
+  }
+
+  .holiday-buttons {
+    display: block;
+    float: left;
+      width: 155px;
+    //  height: 34px;
+    //  display: block;
+    //  position: absolute;
+    //  margin: 20px  auto 0;
+    //  text-align: center;
+  }
+
+  .holiday__button {
+    margin-top: 30px;
+    padding-left: 332px;
+  }
+
+  .holiday__button--1 {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  .holiday__company-name {
+    position: relative;
+    float: left;
+    padding-top: 30px;
+    margin-left: 50px;
+    font: 20px $montserratB;
+  }
+
+  .holiday__title {
+    margin-top: 190px;
+    font: 30px $montserratB;
+    text-align: center;
+  }
+
+  .holiday__text {
+    margin: 42px auto;
+    text-align: center;
+    font: 20px $robotoL;
+  }
+
+  /*SLIDER*/
+
+  //  .slider__image1 {
+  //    background: url(../img/image1_tablet.jpg);
+  //  }
+  //
+  //  .slider__image2 {
+  //    background: url(../img/image2_tablet.jpg);
+  //  }
+  //
+  //  .slider__image3 {
+  //    background: url(../img/image3_tablet.jpg);
+  //  }
+
+  //PARTNERS
+
+  .partners {
+    height: 720px;
+    width: 100%;
+
+  }
+
+  .partners__title {
+    padding-top: 95px;
+    margin: 0 auto;
+    text-align: center;
+    color: $black;
+    font: 22px $montserratB;
+  }
+
+  .partners__partners {
+    display: block;
+    width: 61.2%;//470/768
+     height: 510px;
+    margin: 0 auto;
+  }
+
+  .partners__wrapper {
+    display: inline-block;
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .partners__wrapper--4 {
+    margin-top: -10px;
+  }
+
+  .partners__icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    width: 135px;
+    height: 135px;
+  }
+
+  .partners__avatar {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+  }
+
+  .partners__avatar--1 {
+    background: url(../img/partners_avatar_1.png);
+  }
+
+  .partners__avatar--2 {
+    background: url(../img/partners_avatar_2.png);
+  }
+
+  .partners__avatar--3 {
+    background: url(../img/partners_avatar_3.png);
+  }
+
+  .partners__avatar--4 {
+    background: url(../img/partners_avatar_4.png);
+  }
+
+  .partners__sign {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 95px;
+  }
+
+  .partners__sign--1 {
+    background: url(../img/partners_sign_1.png);
+  }
+
+  .partners__sign--2 {
+    background: url(../img/partners_sign_2.png);
+  }
+
+  .partners__sign--3 {
+    background: url(../img/partners_sign_3.png);
+  }
+
+  .partners__sign--4 {
+    background: url(../img/partners_sign_4.png);
+  }
+
+  .partners__name {
+    padding-top: 15px;
+    font: 14px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .partners__about {
+    width: 230px;
+    padding-top: 10px;
+    margin: 0 auto;
+    font: 14px $robotoL;
+    color: $grey;
+    text-align: center;
+  }
+
+  .partners__other {
+    width: 190px;
+    padding: 12px 26px;
+  }
+
+  //HOLIDAY ACTIVITY
+  .holiday-activity {
+    height: 1135px;
+  }
+
+  .holiday-activity__title {
+    margin-top: 100px;
+    font: 22px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  //SEARCH
+  .search {
+    height: 340px;
+    border-bottom: 3px solid $light-red;
+  }
+
+  .search__title {
+    margin: 85px auto 0;
+    font: 22px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .search__text {
+    padding-top: 30px;
+    font: 18px $robotoL;
+    color: $dark-grey;
+    text-align: center;
+  }
+
+  input[type="search"] {
+    width: 240px;
+    height: 36px;
+    margin: 15px 0;
+    border: 1px solid $g-grey;
+  }
+
+  input[placeholder] {
+    font: 14px $robotoL;
+    color: $g-grey;
+    padding-left: 10px;
+  }
+
+  .search__button-partners {
+    width: 160px;
+    height: 36px;
+    margin-top: -36px;
+    margin-left: 250px;
+    line-height: 0;
+  }
+
+  form {
+    display: block;
+    width: 410px; //410/768
+    margin: 0 auto;
+  }
+
+  input {
+    display: inline-block;
+  }
+
+  //FOOTER
+
+  .footer__wrapper {
+    height: 195px;
+    margin: 0 auto;
+  }
+
+  .footer__company-name {
+    display: inline-block;
+    padding-top: 35px;
+    padding-left: 35px;
+    font: 16px $montserratB;
+    color: $light-red;
+    text-align: center;
+  }
+
+  .footer__menu {
+    display: block;
+    width: 70px;
+    /* position: absolute; */
+    /* float: left; */
+    /* height: 115px; */
+    padding-left: 375px;
+    padding-top: 10px;
+
+  }
+
+  .footer__company {
+    display: inline-block;
+    padding-top: 35px;
+    padding-left: 80px;
+    font: 14px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .footer__item {
+    display: block;
+  }
+
+  .footer__link {
+    font: 14px $robotoL;
+    color: $grey;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  .footer__partners {
+    display: inline-block;
+    float: left;
+    width: 90px;
+    font: 14px Roboto Light, sans-serif;
+    color: #b8b8b8;
+    text-decoration: none;
+    margin-top: -100px;
+    padding-left: 375px;
+
+  }
+
+  .footer__design {
+    display: inline-block;
+    float: left;
+    font: 10px Montserrat Bold, sans-serif;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    margin-top: -95px;
+    padding-left: 510px;
+  }
+
+  .footer__design-logo {
+    display: block;
+    width: 125px;
+    float: left;
+    height: 40px;
+    margin-left: 480px;
+    margin-top: -70px;
+    background: url(../img/footer_designe_logo.png) no-repeat;
+  }
+  }
+
+
+@media (min-width: 769px) and (max-width: 1444px){
+
+  //  HEADER
+
+  header {
+    max-width: 1444px;
+    height: 700px;
+    background-image: url(../img/header_desktop.jpg);
+    background-position: center top;
+    background-size: cover;
+    color: white;
+  }
+
+  .holiday {
+    width: 100%;
+    height: 700px;
+  }
+
+  .holiday-buttons {
+    display: block;
+    float: left;
+    width: 155px;
+    //  height: 34px;
+    //  display: block;
+    //  position: absolute;
+    //  margin: 20px  auto 0;
+    //  text-align: center;
+  }
+
+  .holiday__button {
+    margin-top: 38px;
+    padding-left: 600px;
+  }
+
+  .holiday__button--1 {
+    margin-top: 38px;
+    padding-left: 10px;
+  }
+
+  .holiday__company-name {
+    position: relative;
+    float: left;
+    padding-top: 40px;
+    margin-left: 245px;
+    font: 20px $montserratB;
+  }
+
+  .holiday__title {
+    margin-top: 155px;
+    font: 30px $montserratB;
+    text-align: center;
+  }
+
+  .holiday__text {
+    margin: 40px auto;
+    text-align: center;
+    font: 20px $robotoL;
+  }
+
+  /*SLIDER*/
+
+  //  .slider__image1 {
+  //    background: url(../img/image1_tablet.jpg);
+  //  }
+  //
+  //  .slider__image2 {
+  //    background: url(../img/image2_tablet.jpg);
+  //  }
+  //
+  //  .slider__image3 {
+  //    background: url(../img/image3_tablet.jpg);
+  //  }
+
+  //PARTNERS
+
+  .partners {
+    height: 470px;
+    width: 100%;
+
+  }
+
+  .partners__title {
+    padding-top: 95px;
+    margin: 0 auto;
+    text-align: center;
+    color: $black;
+    font: 22px $montserratB;
+  }
+
+  .partners__partners {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .partners__wrapper {
+    display: inline-block;
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .partners__wrapper--4 {
+    margin-top: -10px;
+  }
+
+  .partners__icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    width: 135px;
+    height: 135px;
+  }
+
+  .partners__avatar {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+  }
+
+  .partners__avatar--1 {
+    background: url(../img/partners_avatar_1.png);
+  }
+
+  .partners__avatar--2 {
+    background: url(../img/partners_avatar_2.png);
+  }
+
+  .partners__avatar--3 {
+    background: url(../img/partners_avatar_3.png);
+  }
+
+  .partners__avatar--4 {
+    background: url(../img/partners_avatar_4.png);
+  }
+
+  .partners__sign {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 95px;
+  }
+
+  .partners__sign--1 {
+    background: url(../img/partners_sign_1.png);
+  }
+
+  .partners__sign--2 {
+    background: url(../img/partners_sign_2.png);
+  }
+
+  .partners__sign--3 {
+    background: url(../img/partners_sign_3.png);
+  }
+
+  .partners__sign--4 {
+    background: url(../img/partners_sign_4.png);
+  }
+
+  .partners__name {
+    padding-top: 15px;
+    font: 14px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .partners__about {
+    width: 230px;
+    padding-top: 15px;
+    margin: 0 auto;
+    font: 14px $robotoL;
+    color: $grey;
+    text-align: center;
+  }
+
+  .partners__other {
+    width: 190px;
+    padding: 12px 26px;
+    margin-top: 35px;
+  }
+
+  //HOLIDAY ACTIVITY
+  .holiday-activity {
+    height: 1125px;
+  }
+
+  .holiday-activity__title {
+    margin-top: 95px;
+    font: 22px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  //SEARCH
+  .search {
+    height: 255px;
+    border-bottom: 3px solid $light-red;
+  }
+
+  .search__title {
+    margin: 95px auto 0;
+    font: 22px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .search__text {
+    padding-top: 30px;
+    font: 18px $robotoL;
+    color: $dark-grey;
+    text-align: center;
+  }
+
+  input[type="search"] {
+    width: 240px;
+    height: 36px;
+    margin: 35px 0;
+    border: 1px solid $g-grey;
+  }
+
+  input[placeholder] {
+    font: 14px $robotoL;
+    color: $g-grey;
+    padding-left: 10px;
+  }
+
+  .search__button-partners {
+    width: 160px;
+    height: 36px;
+    margin-top: -70px;
+    margin-left: 250px;
+    line-height: 0;
+  }
+
+  form {
+    display: block;
+    width: 410px; //410/768
+    margin: 0 auto;
+  }
+
+  input {
+    display: inline-block;
+  }
+
+  //FOOTER
+
+  .footer__wrapper {
+    height: 195px;
+    margin: 0 auto;
+  }
+
+  .footer__company-name {
+    display: inline-block;
+    padding-top: 35px;
+    padding-left: 245px;
+    font: 16px $montserratB;
+    color: $light-red;
+    text-align: center;
+  }
+
+  .footer__menu {
+    display: block;
+    width: 70px;
+    /* position: absolute; */
+    /* float: left; */
+    /* height: 115px; */
+    padding-left: 465px;
+    padding-top: 10px;
+
+  }
+
+  .footer__company {
+    display: inline-block;
+    padding-top: 35px;
+    padding-left: 90px;
+    font: 14px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .footer__item {
+    display: block;
+  }
+
+  .footer__link {
+    font: 14px $robotoL;
+    color: $grey;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  .footer__partners {
+    display: inline-block;
+    float: left;
+    width: 90px;
+    font: 14px Roboto Light, sans-serif;
+    color: #b8b8b8;
+    text-decoration: none;
+    margin-top: -100px;
+    padding-left: 685px;
+
+  }
+
+  .footer__design {
+    display: inline-block;
+    float: left;
+    font: 10px Montserrat Bold, sans-serif;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    margin-top: -95px;
+    padding-left: 950px;
+  }
+
+  .footer__design-logo {
+    display: block;
+    width: 125px;
+    float: left;
+    height: 40px;
+    margin-left: 930px;
+    margin-top: -70px;
+    background: url(../img/footer_designe_logo.png) no-repeat;
+  }
+}
+
+
+
+//@media(max-width: 320px)
+//  {
+//  header {
+//    max-width: 320px;
+//    background-image: url(../img/header_mobile.jpg);
+//    color: white;
+//  }
+//
+//  .holiday {
+//    width: 100%;
+//    height: 542px;
+//  }
+//
+//  .holiday-buttons {
+//    width: 25%;
+//    height: 34px;
+//    display: block;
+//    position: absolute;
+//    margin-top: 20px;
+//    margin-right: 30%;
+//    text-align: center;
+//  }
+//
+//  .holiday__company-name {
+//    position: absolute;
+//    margin-top:175px;
+//    margin-left: 66px;
+//    font: 20px $montserratB;
+//    text-align: center;
+//
+//  }
+//
+//
+//  .holiday__title {
+//    margin-top: 230px;
+//    font: 30px $montserratB;
+//    text-align: center;
+//  }
+//
+//  .holiday__text {
+//    width: 80%;
+//    margin-left: 30px;
+//    margin-top: 20px;
+//    text-align: center;
+//    font: 20px $robotoL;
+//  }
+//
+//  /*SLIDER*/
+//
+//
+//
+//  .slider {
+//    position: relative;
+//    width: 100%;
+//    /*margin-left: 10px;*/
+//    height: 815px;
+//    overflow: hidden;
+//    color: $white;
+//  }
+//
+//
+//
+//  .slider__title {
+//    margin-top: 40px;
+//    margin-bottom: 20px;
+//    text-align: center;
+//    font: 22px $montserratB;
+//    color: $black;
+//  }
+//
+//
+//  .slider__wrapper {
+//    position: relative;
+//    width: 93.75%;
+//    height: 240px;
+//    margin-left:10px;
+//    margin-bottom:10px;
+//  }
+//
+//
+//
+//  .slider__container {
+//    position: relative;
+//    overflow: hidden;
+//    /*height: 240px;*/
+//    /*width: 93.75%;*/
+//
+//  }
+//
+//
+//  .slider__container ul {
+//    width: 20000em;
+//    position: relative;
+//    list-style: none;
+//    margin: 0;
+//    padding: 0;
+//  }
+//
+//
+//  .slider__container  li {
+//    float: left;
+//  }
+//
+//
+//  .slider-content {
+//    position: absolute;
+//    margin-top: -169px;
+//    margin-left: 20px;
+//  }
+//
+//
+//  .slider__button {
+//    background-color: $light-red;
+//    padding: 5px 10px;
+//    font: 10px $montserratR;
+//    border: none;
+//    color: $white;
+//    text-transform: uppercase;
+//  }
+//
+//
+//  .slider-content__title {
+//    font: 24px $montserratB;
+//    padding-top: 15px;
+//  }
+//
+//
+//  .slider-content__text {
+//    padding-top: 15px;
+//    font: 14px $robotoL;
+//    color: $grey;
+//  }
+//
+//
+//}
+//
+//
+////PARTNERS
+//
+//.partners {
+//  height: 1095px;
+//  width: 100%;
+//
+//}
+//
+//.partners__title {
+//  width: 85%;
+//  padding-top: 30px;
+//  padding-left: 25px;
+//  text-align: center;
+//  color: $black;
+//  font: 22px $montserratB;
+//}
+//
+//.partners__wrapper {
+//  display: block;
+//  margin: 0 auto;
+//}
+//
+//.partners__avatar {
+//  width: 120px;
+//  height: 120px;
+//  margin: 10px auto;
+//}
+//
+//.partners__avatar--1 {
+//  background: url(../img/partners_avatar_1.png);
+//}
+//
+//.partners__avatar--2 {
+//  background: url(../img/partners_avatar_2.png);
+//}
+//
+//.partners__avatar--3 {
+//  background: url(../img/partners_avatar_3.png);
+//}
+//
+//.partners__avatar--4 {
+//  background: url(../img/partners_avatar_4.png);
+//}
+//
+//.partners__sign {
+//  width: 40px;
+//  height: 40px;
+//  position: absolute;
+//  margin-top: -43px;
+//  margin-left: 190px;
+//}
+//
+//.partners__sign--1 {
+//  background: url(../img/partners_sign_1.png);
+//}
+//
+//.partners__sign--2 {
+//  background: url(../img/partners_sign_2.png);
+//}
+//
+//.partners__sign--3 {
+//  background: url(../img/partners_sign_3.png);
+//}
+//
+//.partners__sign--4 {
+//  background: url(../img/partners_sign_4.png);
+//}
+//
+//.partners__name {
+//  padding-top: 15px;
+//  font: 14px $montserratB;
+//  color: $black;
+//  text-align: center;
+//}
+//
+//.partners__about {
+//  width: 76%;
+//  padding-top: 10px;
+//  padding-left: 40px;
+//  font: 14px $robotoL;
+//  color: $grey;
+//  text-align: center;
+//}
+//
+//
+////HOLIDAY ACTIVITY
+//.holiday-activity {
+//  height: 1010px;
+//}
+//
+//.holiday-activity__title {
+//  margin-top: 30px;
+//  font: 22px $montserratB;
+//  color: $black;
+//  text-align: center;
+//}
+//
+////SEARCH
+//.search {
+//  height: 255px;
+//  border-bottom: 3px solid $light-red;
+//}
+//
+//.search__title {
+//  width: 90%;
+//  margin: 25px auto 0;
+//  font: 22px $montserratB;
+//  color: $black;
+//  text-align: center;
+//}
+//
+//.search__text {
+//  padding-top: 20px;
+//  font: 18px $robotoL;
+//  color: $dark-grey;
+//  text-align: center;
+//}
+//
+//input[type="search"] {
+//  width: 275px;
+//  height: 40px;
+//  margin: 15px 15px auto;
+//  border: 1px solid $g-grey;
+//}
+//
+//input[placeholder] {
+//  font: 14px $robotoL;
+//  color: $g-grey;
+//  padding-left: 10px;
+//}
+//
+//
+////FOOTER
+//
+//.footer__wrapper {
+//  height: 190px;
+//  margin: 0 auto;
+//}
+//
+//.footer__company-name {
+//  padding-top: 15px;
+//  font: 16px $montserratB;
+//  color: $light-red;
+//  text-align: center;
+//}
+//
+//
+//
+//.footer__menu {
+//  display: block;
+//  width: 70%;
+//  height: 15px;
+//  margin-left: 50px;
+//  text-align: center;
+//
+//}
+//
+//.footer__company {
+//  padding-top: 10px;
+//  font: 14px $montserratB;
+//  color: $black;
+//  text-align: center;
+//}
+//
+//.footer__item {
+//  display: inline-block;
+//}
+//
+//.footer__link {
+//  font: 14px $robotoL;
+//  color: $grey;
+//  text-decoration: none;
+//  padding-left: 10px;
+//}
+//
+//.footer__partners {
+//  font: 14px $robotoL;
+//  color: $grey;
+//  text-decoration: none;
+//  padding-left: 10px;
+//  padding-top: 15px;
+//  text-align: center;
+//}
+//
+//.footer__design {
+//  font: 10px $montserratB;
+//  color: $g-grey;
+//  text-transform: uppercase;
+//  text-align: center;
+//  padding-top: 15px;
+//}
+//
+//.footer__design-logo {
+//  width: 35%;
+//  height: 40px;
+//  margin: 5px auto;
+//  background: url(../img/footer_designe_logo.png) no-repeat;
+//}
+//
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -50,4 +1386,8 @@ height: 542px;
 .partners__other,
 .search__button-partners {
   @include border-radius(20px);
+}
+
+input[type="search"] {
+  @include border-radius(5px);
 }

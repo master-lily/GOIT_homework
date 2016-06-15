@@ -2,11 +2,48 @@
   color: $white;
   font: 14px $montserratB;
   padding: 10px 15px;
+  margin-top: 20px;
+  margin-left: 80px;
   background: none;
   border: none;
 }
 
 .holiday__button--1 {
   @extend .holiday__button;
+  margin-left: 15px;
   border: 2px solid $white;
+}
+
+
+.holiday__button--2 {
+  display: block;
+  margin: 17px auto 0;
+  width: 280px;
+ padding: 15px 0;
+  border: 2px solid $light-red;
+  background: $light-red;
+  cursor: pointer;
+  font: 14px $montserratB;
+  color: $white;
+  text-align: center;
+}
+
+
+
+.search__button-partners {
+@extend .holiday__button--2
+}
+
+
+
+.partners__other {
+  @extend .holiday__button--2;
+  background: none;
+  color: $light-red;
+  margin-top: 20px;
+
+
+
+
+
 }
