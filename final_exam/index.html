@@ -2,29 +2,64 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width, initial-scale=1"> <!-- device-width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- device-width -->
+
+    <script language="javascript">
+        function show_width(in_width) {
+            if (in_width < 480) document.title = '320 -- ' + window.innerWidth;
+            if (in_width >= 480 && in_width < 768) document.title = '480 -- ' + window.innerWidth;
+            if (in_width >= 768 && in_width < 960) document.title = '768 -- ' + window.innerWidth;
+            if (in_width >= 960) document.title = '960 -- ' + window.innerWidth;
+        }
+    </script>
+
     <title>Final exam</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://www.google.com/fonts#UsePlace:use/Collection:Montserrat:400,700">
     <link href="https://www.google.com/fonts#UsePlace:use/Collection:Roboto:300">
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
 
     <script src="js/jquery-1.12.3.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    <script src="http://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+
+    <script src="js/script.js"></script>
+    <!--[if lt IE 9]>
+    <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://github.com/afarkas/html5shiv"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <!--<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>-->
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://github.com/scottjehl/Respond"></script>
+    <![endif]-->
+
+    <script src="http://npmcdn.com/masonry-layout@3.3.2/dist/masonry.pkgd.min.js"></script>
+
+
+    <!--masonry-layout@3.3.2  - FOR IE8-->
+    <script src="js/masonry.pkgd.js"></script>
+    <!--![endif]-->
+
+    <script src="js/masonry.pkgd.min.js"></script>  <!-- last version masonry only it work -->
+
+
 </head>
 
 <body>
 
 <div class="wrapper">
 
-    <header>
-        <div class="holiday">
+    <header class="holiday">
 
             <div class="holiday__company-name">URLAUBSGLÜCK</div>
             <div class="holiday__buttons">
@@ -40,7 +75,6 @@
             <div class="holiday__button--2">Find your holiday partner</div>
 
 
-        </div>
 
     </header>
 
@@ -51,66 +85,126 @@
 
                 <div class="slider__title">How Urlaubsglück works?</div>
 
-
-                <div class="slider__wrapper">
-
-                    <div class="slider__container">
-                        <ul>
-                            <li><img src="img/image1_mobile.jpg" alt="slide 1"></li>
-                            <li><img src="img/image2_mobile.jpg" alt="slide 2"></li>
-                            <li><img src="img/image3_mobile.jpg" alt="slide 3"></li>
-                        </ul>
-
-
+                <div class="carousel__container clierfix">
+                    <div class="carousel">
+                        <div class="carousel__font">
+                            <button class="carousel__button">STEP 1</button>
+                            <h3 class="carousel__header">Sed leo enim,</h3>
+                            <h3 class="carousel__header">condimentum</h3>
+                            <p class="carousel__text">
+                                Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+                            </p>
+                        </div>
+                        <div class="carousel-button-left"><a href="#"></a></div>
+                        <div class="carousel-button-right"><a href="#"></a></div>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-items">
+                                <div class="carousel-block first"></div>
+                                <div class="carousel-block second"></div>
+                                <div class="carousel-block third"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="slider-content">
-                        <button class="slider__button" type="button">step 1</button>
-                        <div class="slider-content__title">Sed leo enim, condimentum</div>
-                        <p class="slider-content__text">Quisque libero libero, dictum non turpis in, luctus semper
-                            lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    <div class="carousel">
+                        <div class="carousel__font">
+                            <button class="carousel__button">STEP 2</button>
+                            <h3 class="carousel__header">Mordi velit risus</h3>
+                            <p class="carousel__text">
+                                Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+                            </p>
+                        </div>
+                        <div class="carousel-button-left"><a href="#"></a></div>
+                        <div class="carousel-button-right"><a href="#"></a></div>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-items">
+                                <div class="carousel-block  second"></div>
+                                <div class="carousel-block  third"></div>
+                                <div class="carousel-block  first"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="slider__wrapper">
-
-                    <div class="slider__container">
-
-                        <ul>
-                            <li><img src="img/image2_mobile.jpg" alt="slide 2"></li>
-                            <li><img src="img/image3_mobile.jpg" alt="slide 3"></li>
-                            <li><img src="img/image1_mobile.jpg" alt="slide 1"></li>
-                        </ul>
-
-                    <div class="slider-content"><button class="slider__button" type="button">step 2</button>
-                        <div class="slider-content__title slider-content__title--2">Morbi velit risus</div>
-                        <p class="slider-content__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum
-                            purus, sit amet porttitor est.</p>
+                    <div class="carousel">
+                        <div class="carousel__font">
+                            <button class="carousel__button">STEP 3</button>
+                            <h3 class="carousel__header">Sed leo enim,</h3>
+                            <h3 class="carousel__header">condimentum</h3>
+                            <p class="carousel__text">
+                                Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+                            </p>
+                        </div>
+                        <div class="carousel-button-left"><a href="#"></a></div>
+                        <div class="carousel-button-right"><a href="#"></a></div>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-items">
+                                <div class="carousel-block  third"></div>
+                                <div class="carousel-block  first"></div>
+                                <div class="carousel-block  second"></div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
 
-                </div>
+
+                <!--<div class="slider__wrapper">-->
+
+                    <!--<div class="slider__container">-->
+                        <!--<ul>-->
+                            <!--<li><img src="img/image1_mobile.jpg" alt="slide 1"></li>-->
+                            <!--<li><img src="img/image2_mobile.jpg" alt="slide 2"></li>-->
+                            <!--<li><img src="img/image3_mobile.jpg" alt="slide 3"></li>-->
+                        <!--</ul>-->
 
 
-                <div class="slider__wrapper">
-                    <div class="slider__container">
-                        <ul>
-                            <li><img src="img/image3_mobile.jpg" alt="slide 3"></li>
-                            <li><img src="img/image1_mobile.jpg" alt="slide 1"></li>
-                            <li><img src="img/image2_mobile.jpg" alt="slide 2"></li>
-                        </ul>
+                    <!--</div>-->
+
+                    <!--<div class="slider-content">-->
+                        <!--<button class="slider__button" type="button">step 1</button>-->
+                        <!--<div class="slider-content__title">Sed leo enim, condimentum</div>-->
+                        <!--<p class="slider-content__text">Quisque libero libero, dictum non turpis in, luctus semper-->
+                            <!--lorem. Donec rhoncus a leo sit amet facilisis.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="slider__wrapper">-->
+
+                    <!--<div class="slider__container">-->
+
+                        <!--<ul>-->
+                            <!--<li><img src="img/image2_mobile.jpg" alt="slide 2"></li>-->
+                            <!--<li><img src="img/image3_mobile.jpg" alt="slide 3"></li>-->
+                            <!--<li><img src="img/image1_mobile.jpg" alt="slide 1"></li>-->
+                        <!--</ul>-->
+
+                    <!--<div class="slider-content"><button class="slider__button" type="button">step 2</button>-->
+                        <!--<div class="slider-content__title slider-content__title--2">Morbi velit risus</div>-->
+                        <!--<p class="slider-content__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum-->
+                            <!--purus, sit amet porttitor est.</p>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+
+
+                <!--<div class="slider__wrapper">-->
+                    <!--<div class="slider__container">-->
+                        <!--<ul>-->
+                            <!--<li><img src="img/image3_mobile.jpg" alt="slide 3"></li>-->
+                            <!--<li><img src="img/image1_mobile.jpg" alt="slide 1"></li>-->
+                            <!--<li><img src="img/image2_mobile.jpg" alt="slide 2"></li>-->
+                        <!--</ul>-->
 
 
 
-                    </div>
+                    <!--</div>-->
 
-                    <div class="slider-content">
-                        <button class="slider__button" type="button">step 3</button>
-                        <div class="slider-content__title slider-content__title--3">Sed leo enim, condimentum</div>
-                        <p class="slider-content__text">Quisque libero libero, dictum non turpis in, luctus semper
-                            lorem. Donec rhoncus a leo sit amet facilisis.</p>
-                    </div>
-                </div>
-                </div>
+                    <!--<div class="slider-content">-->
+                        <!--<button class="slider__button" type="button">step 3</button>-->
+                        <!--<div class="slider-content__title slider-content__title--3">Sed leo enim, condimentum</div>-->
+                        <!--<p class="slider-content__text">Quisque libero libero, dictum non turpis in, luctus semper-->
+                            <!--lorem. Donec rhoncus a leo sit amet facilisis.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
             </div>
 
         </section>
@@ -164,8 +258,6 @@
 
                 </div>
 
-
-
                 <button class="partners__other" type="button">See other partners</button>
             </div>
 
@@ -173,32 +265,64 @@
 
 
 
-        <section>
-            <div class="holiday-activity">
-                <div class="holiday-activity__title">Discover holiday activity ideas</div>
+   <!--MASONRY AND SEARCH PICTURES     -->
+<section>
+    <div>
+    <h3 class="search__title">
+        Discover holiday activity
+        ideas
+    </h3>
+    <div class="masonry" data-masonry='{ "itemSelector": ".item"}'>
+        <div class="item"><img src="img/image1_mobile.jpg"><p class="item__text"></p></div>
+        <div class="item"><img src="img/image1_tablet.jpg"><p class="item__text"> </p></div>
+        <div class="item"><img src="img/image2_tablet.jpg"><p class="item__text"></p></div>
+        <div class="item"><img src="img/image1_mobile.jpg"><p class="item__text"></p></div>
+        <div class="item"><img src="img/image1_tablet.jpg"><p class="item__text"></p></div>
+        <div class="item"><img src="img/image1_tablet.jpg"><p class="item__text"> </p></div>
+        <div class="item"><img src="img/image1_tablet.jpg"><p class="item__text"></p></div>
+    </div>
 
-                <!--..................-->
+    <h3 class="search__title">
+        Discover holidy activity
+        ideas
+    </h3>
+    <p class="search__text">
+        Hi! What are your holiday interests?
+    </p>
+        <form action="#" method="get">
+    <input id="search_query" class="main__input" type="text" placeholder="Enter your interests">
 
-            </div>
-        </section>
+    <button class="search__button-partners" id="submit">Search partners</button>
+            </form>
+</div>
+</section>
+
+        <!--<section>-->
+            <!--<div class="holiday-activity">-->
+                <!--<div class="holiday-activity__title">Discover holiday activity ideas</div>-->
+
+                <!--&lt;!&ndash;..................&ndash;&gt;-->
+
+            <!--</div>-->
+        <!--</section>-->
 
 
 
-        <section>
+        <!--<section>-->
 
-            <div class="search">
-                <div class="search__title">Discover holiday activity ideas</div>
-                <div class="search__text">Hi! What are your holiday interests?</div>
+            <!--<div class="search">-->
+                <!--<div class="search__title">Discover holiday activity ideas</div>-->
+                <!--<div class="search__text">Hi! What are your holiday interests?</div>-->
 
 
-                <form action="#" method="get">
-                    <input type="search" placeholder="Enter your interests">
-                    <input type="button" class="search__button-partners" value="Search partners">
-                </form>
+                <!--<form action="#" method="get">-->
+                    <!--<input type="search" placeholder="Enter your interests">-->
+                    <!--<input type="button" class="search__button-partners" value="Search partners">-->
+                <!--</form>-->
 
-            </div>
+            <!--</div>-->
 
-        </section>
+        <!--</section>-->
 
     </main>
 

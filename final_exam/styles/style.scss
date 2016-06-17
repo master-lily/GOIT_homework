@@ -9,177 +9,153 @@ img {
   width: auto\9; /* ie8 */
 }
 
-//MAX WIDTH 320PX
+.wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+}
 
-@media (max-width: 320px) {
+//HEADER
 
-  //  HEADER
-  .wrapper {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  header {
- width: 100%;
-    background-image: url(../img/header_mobile.jpg);
-    background-position: center top;
-    background-size: cover;
-    color: white;
-  }
-
-  .holiday {
-    width: 100%;
-    height: 542px;
-  }
-
-  .holiday-buttons {
-    width: 25%;
-    height: 34px;
-    display: block;
-    position: absolute;
-    margin: 20px auto 0;
-    text-align: center;
-  }
-
-  .holiday__company-name {
-    position: absolute;
-    margin-top: 175px;
-    margin-left: 66px;
-    font: 20px $montserratB;
-    text-align: center;
-
-  }
-
-  .holiday__title {
-    margin-top: 230px;
-    font: 30px $montserratB;
-    text-align: center;
-  }
-
-  .holiday__text {
-    width: 80%;
-    margin: 20px auto 0;
-    text-align: center;
-    font: 20px $robotoL;
-  }
-
-  /*SLIDER*/
-  //
-
-  .slider {
-    position: relative;
-    width: 100%;
-    /*margin-left: 10px;*/
-    height: 815px;
-    overflow: hidden;
-    color: $white;
-  }
-
-  .slider__title {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    font: 22px $montserratB;
-    color: $black;
-  }
-
-  .slider__wrapper {
-    position: relative;
-    width: 93.75%;
-    height: 240px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  .slider__container {
-    position: relative;
-    overflow: hidden;
-    /*height: 240px;*/
-    /*width: 93.75%;*/
-
-  }
-
-  .slider__container ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .slider__container li {
-    float: left;
-  }
-
-  .slider-content {
-    position: absolute;
-    margin-top: -169px;
-    margin-left: 20px;
-  }
-
-  .slider__button {
-    background-color: $light-red;
-    padding: 5px 10px;
-    font: 10px $montserratR;
-    border: none;
-    color: $white;
-    text-transform: uppercase;
-  }
-
-  .slider-content__title {
-    font: 24px $montserratB;
-    padding-top: 15px;
-  }
-
-  .slider-content__text {
-    padding-top: 15px;
-    font: 14px $robotoL;
-    color: $grey;
-  }
-
-  //  .slider__image1 {
-  //      background: url(../img/image1_mobile.jpg);
-  //    }
-  //
-  //  .slider__image2 {
-  //    background: url(../img/image2_mobile.jpg);
-  //  }
-  //
-  //  .slider__image3 {
-  //    background: url(../img/image3_mobile.jpg);
-  //  }
-
-
-
-
-//PARTNERS
-
-.partners {
-  height: 1095px;
-  width: 100%;
+header {
+  background-image: url(../img/header_desktop.jpg);
+  background-position: center top;
+  background-size: cover;
+  color: white;
 
 }
 
+.holiday__buttons {
+  display: block;
+  width: 150px;
+  height: 36px;
+}
+
+
+.holiday__company-name {
+  font: $montserratB;
+  text-align: center;
+
+}
+
+.holiday__title {
+  font:  $montserratB;
+  text-align: center;
+}
+
+
+
+.holiday__text {
+  text-align: center;
+  font: $robotoL;
+}
+
+/*SLIDER*/
+//
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: $white;
+}
+
+.slider__title {
+  text-align: center;
+  font: $montserratB;
+  color: $black;
+}
+
+.carousel {
+    position: relative;
+}
+ .carousel__font {
+    margin: 70px 0 0 20px;
+    position: absolute;
+    z-index: 9; }
+  .carousel__button {
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    color: #fff;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    font-family: $robotoL;
+    font-size: 10px;
+    border: none;
+    letter-spacing: 2px;
+  }
+   .carousel__header {
+    color: #fff;
+    font-family: $robotoL;
+    font-size: 24px;
+    letter-spacing: 1px;
+   }
+   .carousel__text {
+    font-family: $robotoL;
+    color: #c6c6c6;
+    font-size: 14px;
+   }
+   .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+   }
+ .carousel-items {
+    width: 100000px;
+    position: relative;
+ }
+   .carousel-block {
+    float: left;
+   }
+   .carousel-button-left a,
+   .carousel-button-right a {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    text-decoration: none;
+   }
+   .carousel-button-left a {
+    float: left;
+   }
+   .carousel-button-right a {
+    float: right;
+   }
+  .carousel-button-left a::after {
+    content: '';
+    width: 30px;
+    height: 55px;
+    display: block;
+    position: absolute;
+    left: 50px;
+    z-index: 10;
+    background: url(../img/arrow.png); }
+  .carousel-button-right a::after {
+    content: '';
+    width: 30px;
+    height: 55px;
+    display: block;
+    position: absolute;
+    right: 50px;
+    z-index: 10;
+    background: url(../img/arrow2.png); }
+
 .partners__title {
-  width: 85%;
-  padding-top: 30px;
   margin: 0 auto;
   text-align: center;
   color: $black;
-  font: 22px $montserratB;
+  font: $montserratB;
 }
 
- .partners__partners {
-   display: block;
- }
+.partners__partners {
+  display: block;
+}
 
 .partners__wrapper {
   display: block;
   margin: 0 auto;
 }
 
-  .partners__wrapper--4 {
-    margin-top: 0;
-  }
 .partners__icon {
   position: relative;
   display: block;
@@ -192,7 +168,7 @@ img {
 .partners__avatar {
   width: 120px;
   height: 120px;
- margin: 10px auto;
+  margin: 10px auto;
 }
 
 .partners__avatar--1 {
@@ -251,146 +227,311 @@ img {
   text-align: center;
 }
 
-
-//HOLIDAY ACTIVITY
-.holiday-activity {
-  height: 1010px;
-}
-
-.holiday-activity__title {
-  margin-top: 30px;
-  font: 22px $montserratB;
-  color: $black;
-  text-align: center;
-}
-
-//SEARCH
-.search {
-  height: 255px;
-border-bottom: 3px solid $light-red;
-}
-
 .search__title {
-  width: 90%;
-  margin: 25px auto 0;
-  font: 22px $montserratB;
+ margin: 0 auto;
+  font: $montserratB;
   color: $black;
   text-align: center;
 }
 
 .search__text {
-  padding-top: 20px;
-  font: 18px $robotoL;
+  font:  $robotoL;
   color: $dark-grey;
   text-align: center;
 }
 
+form {
+  display: block;
+  margin: 0 auto;
+}
+
 input[type="search"] {
-  width: 275px;
-  height: 40px;
-  margin: 15px auto;
   border: 1px solid $g-grey;
 }
 
 input[placeholder] {
-  font: 14px $robotoL;
+  font: $robotoL;
   color: $g-grey;
-  padding-left: 10px;
+}
+
+//MAX WIDTH 320PX
+
+@media (max-width: 478px) {
+
+  //  HEADER
+  .wrapper {
+    max-width: 478px;
+    margin: 0 auto;
+  }
+header {
+  background-image: url(../img/header_desktop.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+
+  .holiday-buttons {
+    position: absolute;
+    margin: 20px auto 0;
+  }
+
+
+
+  .holiday__company-name {
+    width: 100%;
+    position: absolute;
+    margin-top: 175px;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  .holiday__button--2 {
+    width: 80%;
+  }
+
+  .holiday__title {
+    margin-top: 230px;
+    font-size: 30px;
+  }
+
+  .holiday__text {
+    width: 80%;
+    margin: 20px auto 0;
+    font-size: 20px;
+  }
+  /*SLIDER*/
+  //
+
+  .slider {
+    width: 93.2%;
+    height: 815px;
+  }
+
+  .slider__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .main .carousel__container {
+        width: 87%;
+        height: 740px;
+  }
+      .carousel {
+        margin: 10px auto;
+        width: 100%;
+      }
+    .carousel-block {
+        width: 300px;
+        height: 240px;
+    }
+       .first {
+        background-image: url("../img/image1_mobile.jpg");
+       }
+      .second {
+        background-image: url("../img/image2_mobile.jpg");
+      }
+     .third {
+        background-image: url("../img/image3_mobile.jpg");
+
+     }
+
+  .carousel-button-left a,
+  .carousel-button-right a {
+    display: none;
+  }
+
+
+//PARTNERS
+
+.partners {
+  height: 1095px;
+  width: 100%;
+
+}
+
+  .partners__title {
+    width: 85%;
+    padding-top: 30px;
+
+    color: $black;
+    font-size: 22px;
+  }
+
+  .partners__wrapper--4 {
+    margin-top: 0;
+  }
+
+
+  .partners__name {
+    padding-top: 15px;
+    font: 14px $montserratB;
+  }
+
+  .partners__about {
+    width: 76%;
+    padding-top: 10px;
+    font: 14px $robotoL;
+  }
+
+  //HOLIDAY ACTIVITY
+  .holiday-activity {
+    height: 1010px;
+  }
+
+  .holiday-activity__title {
+    margin-top: 30px;
+    font: 22px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+   .masonry {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    width: 100%;
+    min-height: 900px;
+    z-index: 2; }
+  .masonry .item {
+    position: relative;
+    width: 100%;
+    //    height: 300px;
+    background-size: cover;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    border-radius: 10px; }
+  .main .masonry .item .item__text {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px; }
+
+  //SEARCH
+  .search {
+    height: 255px;
+    border-bottom: 3px solid $light-red;
+  }
+
+  .search__title {
+    width: 90%;
+    margin: 25px auto 0;
+    font: 22px $montserratB;
+  }
+
+  .search__text {
+    padding-top: 20px;
+    font: 18px $robotoL;
+  }
+
+  .main__input {
+    width: 80%;
+    height: 40px;
+    margin: 15px auto;
+    border: 1px solid $g-grey;
+  }
+
+//  input[type="search"] {
+//    width: 80%;
+//    height: 40px;
+//    margin: 15px auto;
+//    border: 1px solid $g-grey;
+//  }
+
+  input[placeholder] {
+    font: 14px $robotoL;
+    padding-left: 10px;
+  }
+  //FOOTER
+
+  .footer__wrapper {
+    height: 190px;
+    margin: 0 auto;
+  }
+
+  .footer__company-name {
+    padding-top: 15px;
+    font: 16px $montserratB;
+    color: $light-red;
+    text-align: center;
+  }
+
+
+
+  .footer__menu {
+    display: block;
+    width: 70%;
+    height: 15px;
+    margin-left: 50px; //50/320
+    text-align: center;
+
+  }
+
+  .footer__company {
+    padding-top: 10px;
+    font: 14px $montserratB;
+    color: $black;
+    text-align: center;
+  }
+
+  .footer__item {
+    display: inline-block;
+  }
+
+  .footer__link {
+    font: 14px $robotoL;
+    color: $grey;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  .footer__partners {
+    font: 14px $robotoL;
+    color: $grey;
+    text-decoration: none;
+    padding-left: 10px; //10/320
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .footer__design {
+    font: 10px $montserratB;
+    color: $g-grey;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .footer__design-logo {
+    width: 35%;
+    height: 40px;
+    margin: 5px auto;
+    background: url(../img/footer_designe_logo.png) no-repeat;
+  }
 }
 
 
-//FOOTER
-
-.footer__wrapper {
-  height: 190px;
-  margin: 0 auto;
-}
-
-.footer__company-name {
-  padding-top: 15px;
-  font: 16px $montserratB;
-  color: $light-red;
-  text-align: center;
-}
-
-
-
-.footer__menu {
-  display: block;
-  width: 70%;
-  height: 15px;
-  margin-left: 50px; //50/320
-  text-align: center;
-
-}
-
-.footer__company {
-  padding-top: 10px;
-  font: 14px $montserratB;
-  color: $black;
-  text-align: center;
-}
-
-.footer__item {
-  display: inline-block;
-}
-
-.footer__link {
-  font: 14px $robotoL;
-  color: $grey;
-  text-decoration: none;
-  padding-left: 10px;
-}
-
-.footer__partners {
-  font: 14px $robotoL;
-  color: $grey;
-  text-decoration: none;
-  padding-left: 10px; //10/320
-  padding-top: 15px;
-  text-align: center;
-}
-
-.footer__design {
-  font: 10px $montserratB;
-  color: $g-grey;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 15px;
-}
-
-.footer__design-logo {
-  width: 35%;
-  height: 40px;
-  margin: 5px auto;
- background: url(../img/footer_designe_logo.png) no-repeat;
-}
-}
-
-//
-//MEDIA (MIN-WIDTH 321 PX) AND (MAX-WIDTH 768PX)
-
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 768px) {
   //  HEADER
 
   header {
     max-width: 768px;
     height: 700px;
     background-image: url(../img/header_tablet.jpg);
-      background-position: center top;
-      background-size: cover;
-    color: white;
+    background-position: center top;
+    background-size: cover;
+
   }
 
-  .holiday {
-    width: 100%;
-    height: 700px;
-  }
 
   .holiday-buttons {
     display: block;
     float: left;
-      width: 155px;
+    width: 155px;
     //  height: 34px;
     //  display: block;
     //  position: absolute;
@@ -408,39 +549,55 @@ input[placeholder] {
     padding-left: 20px;
   }
 
+
+.holiday__button--2 {
+  width: 240px;
+}
+
   .holiday__company-name {
     position: relative;
     float: left;
     padding-top: 30px;
     margin-left: 50px;
-    font: 20px $montserratB;
+    font-size: 20px;
   }
 
   .holiday__title {
     margin-top: 190px;
     font: 30px $montserratB;
-    text-align: center;
   }
 
   .holiday__text {
     margin: 42px auto;
-    text-align: center;
     font: 20px $robotoL;
   }
 
-  /*SLIDER*/
 
-  //  .slider__image1 {
-  //    background: url(../img/image1_tablet.jpg);
-  //  }
-  //
-  //  .slider__image2 {
-  //    background: url(../img/image2_tablet.jpg);
-  //  }
-  //
-  //  .slider__image3 {
-  //    background: url(../img/image3_tablet.jpg);
-  //  }
+  //SLIDER
+  .carousel__container {
+        display: block;
+        width: 100%;
+        height: 400px; }
+     .carousel {
+        float: left;
+        width: 25%; }
+    .carousel__font {
+        margin: 0 auto; }
+   .carousel-block {
+        width: 300px;
+        height: 400px; }
+       .carousel .first {
+        background-image: url("../img/image1_tablet.jpg");
+       }
+      .main .carousel__container .carousel .second {
+        background-image: url("../img/image2_tablet.jpg");
+      }
+      .main .carousel__container .carousel .third {
+        background-image: url("../img/image3_tablet.jpg");
+      }
+      .main .carousel__container .carousel:nth-of-type(n+2) {
+        margin-left: 20px;
+      }
 
   //PARTNERS
 
@@ -453,15 +610,13 @@ input[placeholder] {
   .partners__title {
     padding-top: 95px;
     margin: 0 auto;
-    text-align: center;
-    color: $black;
     font: 22px $montserratB;
   }
 
   .partners__partners {
     display: block;
     width: 61.2%;//470/768
-     height: 510px;
+    height: 510px;
     margin: 0 auto;
   }
 
@@ -475,66 +630,9 @@ input[placeholder] {
     margin-top: -10px;
   }
 
-  .partners__icon {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    clear: both;
-    width: 135px;
-    height: 135px;
-  }
-
-  .partners__avatar {
-    width: 120px;
-    height: 120px;
-    margin: 10px auto;
-  }
-
-  .partners__avatar--1 {
-    background: url(../img/partners_avatar_1.png);
-  }
-
-  .partners__avatar--2 {
-    background: url(../img/partners_avatar_2.png);
-  }
-
-  .partners__avatar--3 {
-    background: url(../img/partners_avatar_3.png);
-  }
-
-  .partners__avatar--4 {
-    background: url(../img/partners_avatar_4.png);
-  }
-
-  .partners__sign {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    margin-top: -43px;
-    margin-left: 95px;
-  }
-
-  .partners__sign--1 {
-    background: url(../img/partners_sign_1.png);
-  }
-
-  .partners__sign--2 {
-    background: url(../img/partners_sign_2.png);
-  }
-
-  .partners__sign--3 {
-    background: url(../img/partners_sign_3.png);
-  }
-
-  .partners__sign--4 {
-    background: url(../img/partners_sign_4.png);
-  }
-
   .partners__name {
     padding-top: 15px;
     font: 14px $montserratB;
-    color: $black;
-    text-align: center;
   }
 
   .partners__about {
@@ -559,8 +657,45 @@ input[placeholder] {
   .holiday-activity__title {
     margin-top: 100px;
     font: 22px $montserratB;
-    color: $black;
-    text-align: center;
+  }
+
+  //MASSONRY
+
+   .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+    width: 100%;
+    min-height: 900px;
+    z-index: 2;
+  }
+
+   .item {
+    position: relative;
+    width: 32%;
+    //    height: 300px;
+    background-size: cover;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+  }
+
+   .item__text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+  }
+
+   .item:nth-of-type(5) {
+    width: 64%;
+  }
+  .item:nth-of-type(6) {
+    width: 64%;
   }
 
   //SEARCH
@@ -572,15 +707,11 @@ input[placeholder] {
   .search__title {
     margin: 85px auto 0;
     font: 22px $montserratB;
-    color: $black;
-    text-align: center;
   }
 
   .search__text {
     padding-top: 30px;
     font: 18px $robotoL;
-    color: $dark-grey;
-    text-align: center;
   }
 
   input[type="search"] {
@@ -692,8 +823,7 @@ input[placeholder] {
     margin-top: -70px;
     background: url(../img/footer_designe_logo.png) no-repeat;
   }
-  }
-
+}
 
 @media (min-width: 769px) and (max-width: 1444px){
 
@@ -734,6 +864,10 @@ input[placeholder] {
     padding-left: 10px;
   }
 
+  .holiday__button--2 {
+    width: 240px;
+  }
+
   .holiday__company-name {
     position: relative;
     float: left;
@@ -750,23 +884,36 @@ input[placeholder] {
 
   .holiday__text {
     margin: 40px auto;
-    text-align: center;
     font: 20px $robotoL;
   }
 
   /*SLIDER*/
-
-  //  .slider__image1 {
-  //    background: url(../img/image1_tablet.jpg);
-  //  }
-  //
-  //  .slider__image2 {
-  //    background: url(../img/image2_tablet.jpg);
-  //  }
-  //
-  //  .slider__image3 {
-  //    background: url(../img/image3_tablet.jpg);
-  //  }
+  .main .carousel__container {
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+  }
+      .carousel {
+        float: left;
+        width: 30%;
+        height: 400px;
+      }
+       .carousel-block {
+        width: 300px;
+        height: 400px;
+      }
+      .first {
+      background-image: url("../img/image1_desktop.jpg");
+      }
+      .second {
+     background-image: url("../img/image2_desktop.jpg");
+      }
+       .third {
+    background-image: url("../img/image3_desktop.jpg");
+      }
+  .carousel:nth-of-type(n+2) {
+        margin-left: 20px;
+      }
 
   //PARTNERS
 
@@ -779,8 +926,6 @@ input[placeholder] {
   .partners__title {
     padding-top: 95px;
     margin: 0 auto;
-    text-align: center;
-    color: $black;
     font: 22px $montserratB;
   }
 
@@ -799,66 +944,9 @@ input[placeholder] {
     margin-top: -10px;
   }
 
-  .partners__icon {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    clear: both;
-    width: 135px;
-    height: 135px;
-  }
-
-  .partners__avatar {
-    width: 120px;
-    height: 120px;
-    margin: 10px auto;
-  }
-
-  .partners__avatar--1 {
-    background: url(../img/partners_avatar_1.png);
-  }
-
-  .partners__avatar--2 {
-    background: url(../img/partners_avatar_2.png);
-  }
-
-  .partners__avatar--3 {
-    background: url(../img/partners_avatar_3.png);
-  }
-
-  .partners__avatar--4 {
-    background: url(../img/partners_avatar_4.png);
-  }
-
-  .partners__sign {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    margin-top: -43px;
-    margin-left: 95px;
-  }
-
-  .partners__sign--1 {
-    background: url(../img/partners_sign_1.png);
-  }
-
-  .partners__sign--2 {
-    background: url(../img/partners_sign_2.png);
-  }
-
-  .partners__sign--3 {
-    background: url(../img/partners_sign_3.png);
-  }
-
-  .partners__sign--4 {
-    background: url(../img/partners_sign_4.png);
-  }
-
   .partners__name {
     padding-top: 15px;
     font: 14px $montserratB;
-    color: $black;
-    text-align: center;
   }
 
   .partners__about {
@@ -866,8 +954,6 @@ input[placeholder] {
     padding-top: 15px;
     margin: 0 auto;
     font: 14px $robotoL;
-    color: $grey;
-    text-align: center;
   }
 
   .partners__other {
@@ -884,9 +970,37 @@ input[placeholder] {
   .holiday-activity__title {
     margin-top: 95px;
     font: 22px $montserratB;
-    color: $black;
-    text-align: center;
+
   }
+
+  .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+    width: 100%;
+    min-height: 900px;
+    z-index: 2; }
+   .item {
+    position: relative;
+    width: 32%;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    border-radius: 10px; }
+  .item__text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px; }
+  .item:nth-of-type(5) {
+    width: 64%; }
+  .item:nth-of-type(6) {
+    width: 64%; }
 
   //SEARCH
   .search {
@@ -897,15 +1011,11 @@ input[placeholder] {
   .search__title {
     margin: 95px auto 0;
     font: 22px $montserratB;
-    color: $black;
-    text-align: center;
   }
 
   .search__text {
     padding-top: 30px;
     font: 18px $robotoL;
-    color: $dark-grey;
-    text-align: center;
   }
 
   input[type="search"] {
@@ -1019,341 +1129,3 @@ input[placeholder] {
   }
 }
 
-
-
-//@media(max-width: 320px)
-//  {
-//  header {
-//    max-width: 320px;
-//    background-image: url(../img/header_mobile.jpg);
-//    color: white;
-//  }
-//
-//  .holiday {
-//    width: 100%;
-//    height: 542px;
-//  }
-//
-//  .holiday-buttons {
-//    width: 25%;
-//    height: 34px;
-//    display: block;
-//    position: absolute;
-//    margin-top: 20px;
-//    margin-right: 30%;
-//    text-align: center;
-//  }
-//
-//  .holiday__company-name {
-//    position: absolute;
-//    margin-top:175px;
-//    margin-left: 66px;
-//    font: 20px $montserratB;
-//    text-align: center;
-//
-//  }
-//
-//
-//  .holiday__title {
-//    margin-top: 230px;
-//    font: 30px $montserratB;
-//    text-align: center;
-//  }
-//
-//  .holiday__text {
-//    width: 80%;
-//    margin-left: 30px;
-//    margin-top: 20px;
-//    text-align: center;
-//    font: 20px $robotoL;
-//  }
-//
-//  /*SLIDER*/
-//
-//
-//
-//  .slider {
-//    position: relative;
-//    width: 100%;
-//    /*margin-left: 10px;*/
-//    height: 815px;
-//    overflow: hidden;
-//    color: $white;
-//  }
-//
-//
-//
-//  .slider__title {
-//    margin-top: 40px;
-//    margin-bottom: 20px;
-//    text-align: center;
-//    font: 22px $montserratB;
-//    color: $black;
-//  }
-//
-//
-//  .slider__wrapper {
-//    position: relative;
-//    width: 93.75%;
-//    height: 240px;
-//    margin-left:10px;
-//    margin-bottom:10px;
-//  }
-//
-//
-//
-//  .slider__container {
-//    position: relative;
-//    overflow: hidden;
-//    /*height: 240px;*/
-//    /*width: 93.75%;*/
-//
-//  }
-//
-//
-//  .slider__container ul {
-//    width: 20000em;
-//    position: relative;
-//    list-style: none;
-//    margin: 0;
-//    padding: 0;
-//  }
-//
-//
-//  .slider__container  li {
-//    float: left;
-//  }
-//
-//
-//  .slider-content {
-//    position: absolute;
-//    margin-top: -169px;
-//    margin-left: 20px;
-//  }
-//
-//
-//  .slider__button {
-//    background-color: $light-red;
-//    padding: 5px 10px;
-//    font: 10px $montserratR;
-//    border: none;
-//    color: $white;
-//    text-transform: uppercase;
-//  }
-//
-//
-//  .slider-content__title {
-//    font: 24px $montserratB;
-//    padding-top: 15px;
-//  }
-//
-//
-//  .slider-content__text {
-//    padding-top: 15px;
-//    font: 14px $robotoL;
-//    color: $grey;
-//  }
-//
-//
-//}
-//
-//
-////PARTNERS
-//
-//.partners {
-//  height: 1095px;
-//  width: 100%;
-//
-//}
-//
-//.partners__title {
-//  width: 85%;
-//  padding-top: 30px;
-//  padding-left: 25px;
-//  text-align: center;
-//  color: $black;
-//  font: 22px $montserratB;
-//}
-//
-//.partners__wrapper {
-//  display: block;
-//  margin: 0 auto;
-//}
-//
-//.partners__avatar {
-//  width: 120px;
-//  height: 120px;
-//  margin: 10px auto;
-//}
-//
-//.partners__avatar--1 {
-//  background: url(../img/partners_avatar_1.png);
-//}
-//
-//.partners__avatar--2 {
-//  background: url(../img/partners_avatar_2.png);
-//}
-//
-//.partners__avatar--3 {
-//  background: url(../img/partners_avatar_3.png);
-//}
-//
-//.partners__avatar--4 {
-//  background: url(../img/partners_avatar_4.png);
-//}
-//
-//.partners__sign {
-//  width: 40px;
-//  height: 40px;
-//  position: absolute;
-//  margin-top: -43px;
-//  margin-left: 190px;
-//}
-//
-//.partners__sign--1 {
-//  background: url(../img/partners_sign_1.png);
-//}
-//
-//.partners__sign--2 {
-//  background: url(../img/partners_sign_2.png);
-//}
-//
-//.partners__sign--3 {
-//  background: url(../img/partners_sign_3.png);
-//}
-//
-//.partners__sign--4 {
-//  background: url(../img/partners_sign_4.png);
-//}
-//
-//.partners__name {
-//  padding-top: 15px;
-//  font: 14px $montserratB;
-//  color: $black;
-//  text-align: center;
-//}
-//
-//.partners__about {
-//  width: 76%;
-//  padding-top: 10px;
-//  padding-left: 40px;
-//  font: 14px $robotoL;
-//  color: $grey;
-//  text-align: center;
-//}
-//
-//
-////HOLIDAY ACTIVITY
-//.holiday-activity {
-//  height: 1010px;
-//}
-//
-//.holiday-activity__title {
-//  margin-top: 30px;
-//  font: 22px $montserratB;
-//  color: $black;
-//  text-align: center;
-//}
-//
-////SEARCH
-//.search {
-//  height: 255px;
-//  border-bottom: 3px solid $light-red;
-//}
-//
-//.search__title {
-//  width: 90%;
-//  margin: 25px auto 0;
-//  font: 22px $montserratB;
-//  color: $black;
-//  text-align: center;
-//}
-//
-//.search__text {
-//  padding-top: 20px;
-//  font: 18px $robotoL;
-//  color: $dark-grey;
-//  text-align: center;
-//}
-//
-//input[type="search"] {
-//  width: 275px;
-//  height: 40px;
-//  margin: 15px 15px auto;
-//  border: 1px solid $g-grey;
-//}
-//
-//input[placeholder] {
-//  font: 14px $robotoL;
-//  color: $g-grey;
-//  padding-left: 10px;
-//}
-//
-//
-////FOOTER
-//
-//.footer__wrapper {
-//  height: 190px;
-//  margin: 0 auto;
-//}
-//
-//.footer__company-name {
-//  padding-top: 15px;
-//  font: 16px $montserratB;
-//  color: $light-red;
-//  text-align: center;
-//}
-//
-//
-//
-//.footer__menu {
-//  display: block;
-//  width: 70%;
-//  height: 15px;
-//  margin-left: 50px;
-//  text-align: center;
-//
-//}
-//
-//.footer__company {
-//  padding-top: 10px;
-//  font: 14px $montserratB;
-//  color: $black;
-//  text-align: center;
-//}
-//
-//.footer__item {
-//  display: inline-block;
-//}
-//
-//.footer__link {
-//  font: 14px $robotoL;
-//  color: $grey;
-//  text-decoration: none;
-//  padding-left: 10px;
-//}
-//
-//.footer__partners {
-//  font: 14px $robotoL;
-//  color: $grey;
-//  text-decoration: none;
-//  padding-left: 10px;
-//  padding-top: 15px;
-//  text-align: center;
-//}
-//
-//.footer__design {
-//  font: 10px $montserratB;
-//  color: $g-grey;
-//  text-transform: uppercase;
-//  text-align: center;
-//  padding-top: 15px;
-//}
-//
-//.footer__design-logo {
-//  width: 35%;
-//  height: 40px;
-//  margin: 5px auto;
-//  background: url(../img/footer_designe_logo.png) no-repeat;
-//}
-//
