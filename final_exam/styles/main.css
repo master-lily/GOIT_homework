@@ -65,14 +65,8 @@ header {
   background-size: cover;
   color: white; }
 
-.holiday__buttons {
-  display: block;
-  width: 150px;
-  height: 36px; }
-
 .holiday__company-name {
-  font: Montserrat Bold, sans-serif;
-  text-align: center; }
+  font: Montserrat Bold, sans-serif; }
 
 .holiday__title {
   font: Montserrat Bold, sans-serif;
@@ -92,7 +86,7 @@ header {
 
 .slider__title {
   text-align: center;
-  font: Montserrat Bold, sans-serif;
+  font: 22px Montserrat Bold, sans-serif;
   color: black; }
 
 .carousel {
@@ -304,8 +298,7 @@ input[placeholder] {
 
   .slider__title {
     margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 22px; }
+    margin-bottom: 20px; }
 
   .main .carousel__container {
     width: 87%;
@@ -403,9 +396,10 @@ input[placeholder] {
     font: 18px Roboto Light, sans-serif; }
 
   .main__input {
-    width: 80%;
+    width: 77%;
     height: 40px;
     margin: 15px auto;
+    margin-left: 10%;
     border: 1px solid #b4b4b4; }
 
   input[placeholder] {
@@ -503,6 +497,10 @@ input[placeholder] {
     margin: 42px auto;
     font: 20px Roboto Light, sans-serif; }
 
+  .slider__title {
+    padding-top: 92px;
+    padding-bottom: 33px; }
+
   .carousel__container {
     display: block;
     width: 100%;
@@ -519,16 +517,16 @@ input[placeholder] {
     width: 300px;
     height: 400px; }
 
-  .carousel .first {
+  .first {
     background-image: url("../img/image1_tablet.jpg"); }
 
-  .main .carousel__container .carousel .second {
+  .second {
     background-image: url("../img/image2_tablet.jpg"); }
 
-  .main .carousel__container .carousel .third {
+  .third {
     background-image: url("../img/image3_tablet.jpg"); }
 
-  .main .carousel__container .carousel:nth-of-type(n+2) {
+  .carousel:nth-of-type(n+2) {
     margin-left: 20px; }
 
   .partners {
@@ -758,6 +756,13 @@ input[placeholder] {
     font: 20px Roboto Light, sans-serif; }
 
   /*SLIDER*/
+  .slider {
+    width: 81%; }
+
+  .slider__title {
+    padding-top: 95px;
+    padding-bottom: 35px; }
+
   .main .carousel__container {
     width: 100%;
     margin: 0 auto;
@@ -767,6 +772,12 @@ input[placeholder] {
     float: left;
     width: 30%;
     height: 400px; }
+
+  .carousel__font {
+    margin: 230px 0 0 20px; }
+
+  .carousel__text {
+    padding-top: 15px; }
 
   .carousel-block {
     width: 300px;
@@ -784,22 +795,25 @@ input[placeholder] {
   .carousel:nth-of-type(n+2) {
     margin-left: 20px; }
 
+  .carousel-button-left a {
+    padding-top: 68px; }
+
+  .carousel-button-right a {
+    padding-top: 68px; }
+
   .partners {
     height: 470px;
-    width: 100%; }
+    width: 81%;
+    margin: 0 auto; }
 
   .partners__title {
     padding-top: 95px;
     margin: 0 auto;
     font: 22px Montserrat Bold, sans-serif; }
 
-  .partners__partners {
-    display: block;
-    margin: 0 auto; }
-
   .partners__wrapper {
     display: inline-block;
-    width: 230px;
+    width: 24%;
     margin: 0 auto; }
 
   .partners__wrapper--4 {
@@ -810,7 +824,7 @@ input[placeholder] {
     font: 14px Montserrat Bold, sans-serif; }
 
   .partners__about {
-    width: 230px;
+    width: 100%;
     padding-top: 15px;
     margin: 0 auto;
     font: 14px Roboto Light, sans-serif; }
@@ -886,46 +900,55 @@ input[placeholder] {
   .search__button-partners {
     width: 160px;
     height: 36px;
-    margin-top: -70px;
+    margin-top: -40px;
     margin-left: 250px;
     line-height: 0; }
 
   form {
     display: block;
     width: 410px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 40px;
+    padding-top: 40px; }
+
+  .main__input {
+    display: inline-block;
+    width: 212px;
+    height: 36px;
+    margin-right: 10px; }
 
   input {
     display: inline-block; }
 
   .footer__wrapper {
+    display: block;
+    width: 70%;
     height: 195px;
     margin: 0 auto; }
 
   .footer__company-name {
-    display: inline-block;
+    display: block;
+    float: left;
     padding-top: 35px;
-    padding-left: 245px;
     font: 16px Montserrat Bold, sans-serif;
-    color: #ff4e50;
-    text-align: center; }
+    color: #ff4e50; }
+
+  .footer__company-menu {
+    display: block;
+    float: left;
+    width: 80px;
+    padding-left: 8.9285%;
+    padding-top: 35px; }
+
+  .footer__company {
+    display: block;
+    font: 14px Montserrat Bold, sans-serif;
+    color: black; }
 
   .footer__menu {
     display: block;
     width: 70px;
-    /* position: absolute; */
-    /* float: left; */
-    /* height: 115px; */
-    padding-left: 465px;
     padding-top: 10px; }
-
-  .footer__company {
-    display: inline-block;
-    padding-top: 35px;
-    padding-left: 90px;
-    font: 14px Montserrat Bold, sans-serif;
-    color: black;
-    text-align: center; }
 
   .footer__item {
     display: block; }
@@ -937,31 +960,31 @@ input[placeholder] {
     padding-left: 10px; }
 
   .footer__partners {
-    display: inline-block;
+    display: block;
     float: left;
+    padding-top: 35px;
+    padding-left: 8.4325%;
     width: 90px;
     font: 14px Roboto Light, sans-serif;
-    color: #b8b8b8;
-    text-decoration: none;
-    margin-top: -100px;
-    padding-left: 685px; }
+    color: black;
+    text-decoration: none; }
+
+  .footer__logo {
+    display: block;
+    float: right;
+    padding-top: 35px;
+    width: 125px; }
 
   .footer__design {
-    display: inline-block;
-    float: left;
     font: 10px Montserrat Bold, sans-serif;
     color: #b4b4b4;
     text-transform: uppercase;
-    margin-top: -95px;
-    padding-left: 950px; }
+    padding-left: 30px;
+    letter-spacing: 0.1em; }
 
   .footer__design-logo {
-    display: block;
     width: 125px;
-    float: left;
     height: 40px;
-    margin-left: 930px;
-    margin-top: -70px;
     background: url(../img/footer_designe_logo.png) no-repeat; } }
 .holiday__button--1,
 .holiday__button--2,
