@@ -8,7 +8,7 @@ function randomInteger(min, max) {
 }
 
 $(function(){
-    $('.carousel').carousel({backgroubdColor:'transparent'});
+    $('.carousel').carousel({backgroundColor:'transparent'});
     search_button();
     search('default');
 });
@@ -45,3 +45,9 @@ function search(query)
     });
 }
 
+
+var imagesLoaded = require('imagesLoaded');
+
+imagesLoaded( '#container', function() {
+    // images have loaded
+});

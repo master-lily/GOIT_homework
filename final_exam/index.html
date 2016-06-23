@@ -14,10 +14,21 @@
     </script>
 
     <title>Final exam</title>
-    <link rel="stylesheet" href="styles/reset.css">
+    <!--<link rel="stylesheet" href="styles/reset.css">-->
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://www.google.com/fonts#UsePlace:use/Collection:Montserrat:400,700">
-    <link href="https://www.google.com/fonts#UsePlace:use/Collection:Roboto:300">
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="styles/style_ie8.scss" media="all">
+    <script>
+        document.createElement('header');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
+    <link href="http://www.google.com/fonts#UsePlace:use/Collection:Montserrat:400,700">
+    <link href="http://www.google.com/fonts#UsePlace:use/Collection:Roboto:300">
 
     <script src="js/jquery-1.12.3.js"></script>
 
@@ -28,11 +39,15 @@
 
     <script src="js/script.js"></script>
     <!--[if lt IE 9]>
-    <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!--[if lt IE 9]>
     <script src="http://github.com/afarkas/html5shiv"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!--[if lt IE 9]>
@@ -52,6 +67,8 @@
 
     <script src="js/masonry.pkgd.min.js"></script>  <!-- last version masonry only it work -->
 
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+
 
 </head>
 
@@ -62,11 +79,11 @@
     <header class="holiday">
 
             <div class="holiday__company-name">URLAUBSGLÜCK</div>
-            <div class="holiday__buttons">
+            <!--<div class="holiday__buttons">-->
                 <button class="holiday__button" type="button">Log in</button>
                 <button class="holiday__button--1" type="button">Sign up</button>
 
-            </div>
+            <!--</div>-->
 
 
             <h1 class="holiday__title">SHARE YOUR<br>
