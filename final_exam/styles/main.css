@@ -304,13 +304,14 @@ input[placeholder] {
     margin-top: 40px;
     margin-bottom: 20px; }
 
-  .main .carousel__container {
+  .carousel__container {
     width: 87%;
-    height: 740px; }
+    height: 740px;
+    margin: 0 auto; }
 
   .carousel {
     margin: 10px auto;
-    width: 100%; }
+    width: 70%; }
 
   .carousel-block {
     width: 300px;
@@ -351,6 +352,9 @@ input[placeholder] {
     padding-top: 10px;
     font: 14px Roboto Light, sans-serif; }
 
+  .partners__other {
+    margin-bottom: 30px; }
+
   .holiday-activity {
     height: 1010px; }
 
@@ -370,21 +374,20 @@ input[placeholder] {
     width: 100%;
     min-height: 900px;
     z-index: 2; }
-
-  .masonry .item {
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    margin-bottom: 1%;
-    margin-right: 1%;
-    border-radius: 10px; }
-
-  .main .masonry .item .item__text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 16px; }
+    .masonry .item {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      margin-bottom: 1%;
+      margin-right: 1%;
+      border-radius: 10px; }
+      .masonry .item .item__text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 16px; }
 
   .search {
     height: 255px;
@@ -409,6 +412,9 @@ input[placeholder] {
   input[placeholder] {
     font: 14px Roboto Light, sans-serif;
     padding-left: 10px; }
+
+  .search__button-partners {
+    margin-bottom: 40px; }
 
   .footer__wrapper {
     height: 190px;
@@ -512,7 +518,7 @@ input[placeholder] {
 
   .carousel {
     float: left;
-    width: 25%; }
+    width: 30%; }
 
   .carousel__font {
     margin: 0 auto; }
@@ -589,27 +595,24 @@ input[placeholder] {
     width: 100%;
     min-height: 900px;
     z-index: 2; }
-
-  .item {
-    position: relative;
-    width: 32%;
-    background-size: cover;
-    margin-bottom: 1%;
-    margin-right: 1%;
-    border-radius: 10px; }
-
-  .item__text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 16px; }
-
-  .item:nth-of-type(5) {
-    width: 64%; }
-
-  .item:nth-of-type(6) {
-    width: 64%; }
+    .masonry .item {
+      position: relative;
+      width: 32%;
+      height: 300px;
+      background-size: cover;
+      margin-bottom: 1%;
+      margin-right: 1%;
+      border-radius: 10px; }
+      .masonry .item .item__text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 16px; }
+    .masonry .item:nth-of-type(5) {
+      width: 64%; }
+    .masonry .item:nth-of-type(6) {
+      width: 64%; }
 
   .search {
     height: 340px;
@@ -945,7 +948,8 @@ input[placeholder] {
     display: block;
     width: 70%;
     height: 195px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 100px; }
 
   .footer__company-name {
     display: block;
