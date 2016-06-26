@@ -37,6 +37,21 @@ module.exports = function(grunt) {
 
 
         },
+
+        sass: {
+            dist: {
+                files:
+                    [{
+                    expand: true,
+                    cwd: 'styles',
+                    src: ['style_ie8.scss'],
+                    dest: 'styles',
+                    ext: '.css'
+                }]
+
+            }
+        },
+
         watch:
         {
             sass:

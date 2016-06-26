@@ -1,6 +1,7 @@
 /**
  * Created by Lily on 17.06.2016.
  */
+
 function randomInteger(min, max) {
     var rand = min + Math.random() * (max - min);
     rand = Math.round(rand);
@@ -23,7 +24,7 @@ function mansory_build(data)
 {
     $('.item').each(function(i)
     {
-        $(this).css('item img', 'url('+_.map(data.hits, 'webformatURL')[i]+')');
+        $(this).css('backgroundImage', 'url('+_.map(data.hits, 'webformatURL')[i]+')');
         console.log('i', i);
         $('.item__text:nth-child('+i+')').html(data.hits[i].tags.split(',')[0]);
     });
@@ -44,10 +45,3 @@ function search(query)
             console.log('Not found results!');
     });
 }
-
-
-var imagesLoaded = require('imagesLoaded');
-
-imagesLoaded( '#container', function() {
-    // images have loaded
-});
